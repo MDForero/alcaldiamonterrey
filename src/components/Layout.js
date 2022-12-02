@@ -23,7 +23,7 @@ const Layout = () => {
                             navbarScroll
                         >
                             <NavLink className="nav-link" to="/" >Inicio</NavLink>
-                            <NavLink className="nav-link" to="empresas">Empresas</NavLink>
+                            <NavLink className="nav-link" to="empresas">Comercio</NavLink>
                             <NavLink className="nav-link" to="contacto">Contacto</NavLink>
                         </Nav>
 

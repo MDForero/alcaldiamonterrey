@@ -1,0 +1,121 @@
+.preview {
+    background: url("images/1280px-La_Roca_y_el_puente.jpg") no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.overlay {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.456);
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay img {
+    height: 70%;
+}
+
+.grid-store {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    
+}
+
+.categorys img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px ;
+}
+
+.g1 {
+    grid-row: 2/4;
+    grid-column: 1/3;
+    height: 100%;
+}
+.g-title{
+    margin-top: 50px;
+    grid-column: 1/5;
+    text-align: center;
+}
+
+.figure {
+    display: grid;
+    grid-template: 1fr/1fr;
+    grid-template-areas: "img";
+    max-width: 100%;
+    overflow: hidden;
+    border: 3px solid #037ccb ;
+    border-radius: 10px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-area: img;
+    transition: all .5s ease-in-out;
+}
+
+
+.img:hover {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.3);
+}
+
+.figure::after {
+    border-radius: 10px;
+    grid-area: img;
+    width: 100%;
+    height: 100%;
+    background-color: #5c606242;
+    color: rgb(0, 0, 0);
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    clip-path: circle(150% at top right);
+    transition: clip-path .4s;
+}
+
+.figure:hover::after {
+    clip-path: circle(0 at top right);
+}
+
+#restaurante::after {
+    content: "Restaurante";
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#hotel::after {
+    content: "Hotel";
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#drogueria::after {
+    content: "Droguería";
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#drogueria::after {
+    content: "Droguería";
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#ferreteria::after {
+    content: "Ferretería";
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#ropa::after {
+    content: "Tiendas de ropa";
+    font-family: 'Courier New', Courier, monospace;
+}
