@@ -20,20 +20,28 @@ const Inicio = () => {
         <div className='g-title'><h1>Categorias destacadas</h1></div>
         <Link className='categorys g1 figure' id='restaurante' to="">
           <img src={restaurant} className="img" id="restaurante"/>
+          <span className="listing-badges">16 establecimientos</span>
         </Link>
         <Link className='categorys g2 figure' id="drogueria" to="">
           <img className='img' src={drogueria} />
+          <span className="listing-badges">16 establecimientos</span>
         </Link>
         <Link className='categorys g3 figure' id="hotel" to="">
           <img className='img' src={hotel} />
+          <span className="listing-badges">16 establecimientos</span>
 
         </Link>
         <Link className='categorys g4 figure' id="ferreteria" to="">
           <img className='img' src={ferreteria} />
+          <span className="listing-badges">16 establecimientos</span>
         </Link>
         <Link className='categorys g5 figure' id="ropa" to="">
           <img className='img' src={ropa} />
+          <span className="listing-badges">16 establecimientos</span>
         </Link>
+      </section>
+      <section style={{margin:"50px"}} className="container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63606.97436451042!2d-72.9239018473618!3d4.866398168616339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ad27e37ebea73%3A0x12a98d7eb504b504!2sMonterrey%2C%20Casanare!5e0!3m2!1ses-419!2sco!4v1670015704176!5m2!1ses-419!2sco" width="100%" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </div>
   )

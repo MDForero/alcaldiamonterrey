@@ -23,7 +23,7 @@ a {
 .grid-store {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 1px;
     
 }
 
@@ -79,7 +79,7 @@ a {
     color: rgb(0, 0, 0);
     display: grid;
     place-items: center;
-    font-size: 2rem;
+    font-size: 1.4em;
     text-align: center;
     font-weight: bold;
     clip-path: circle(150% at top right);
@@ -118,4 +118,10 @@ a {
 #ropa::after {
     content: "Tiendas de ropa";
     font-family: 'Courier New', Courier, monospace;
+}
+.listing-badges{
+    position: absolute;
+    background-color: #037ccb ;
+    color:white;
+    border-radius: 10px;
 }
