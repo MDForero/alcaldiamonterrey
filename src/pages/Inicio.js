@@ -6,6 +6,7 @@ import hotel from "../images/hotel.png"
 import autoservicio from "../images/autoservicio.jpg"
 import ferreteria from "../images/ferreteria.jpg"
 import ropa from "../images/almacenesropa .jpg"
+import infografia from "../images/infografia.jpg"
 import { Link } from 'react-router-dom'
 
 const Inicio = () => {
@@ -42,6 +43,12 @@ const Inicio = () => {
       </section>
       <section className="container">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63606.97436451042!2d-72.9239018473618!3d4.866398168616339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ad27e37ebea73%3A0x12a98d7eb504b504!2sMonterrey%2C%20Casanare!5e0!3m2!1ses-419!2sco!4v1670015704176!5m2!1ses-419!2sco" width="100%" height="450px"  style={{margin:"50px 0px " }} loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+      <section className="container">
+        <figure>
+          <img src={infografia} alt="infografia" width="100%"/>
+          <figcaption style={{textAlign:"center"}}>Infografía</figcaption>
+        </figure>
       </section>
     </div>
   )

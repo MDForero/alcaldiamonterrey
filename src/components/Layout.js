@@ -3,19 +3,20 @@ import { Container, Nav, Navbar } from 'react-bootstrap'
 import { Link, NavLink, Outlet } from 'react-router-dom'
 import logo from "../images/logoalcaldia.png"
 import corazon from "../images/corazon.png"
+import Footer from './Footer'
 
 const Layout = () => {
     
     return (
-        <section>
+        <div>
             <header style={{display:"flex", justifyContent:"center", alignContent:"center", background:"#037ccb"}}>
                 <figure style={{width:"400px"}}>
                     <img src={logo} width="100%"/>
                 </figure>
             </header>
-            <Navbar style={{background:"#037ccb"}} expand="lg" sticky='top'>
+            <Navbar bg='ligth' expand="lg" sticky='top'>
                 <Container fluid>
-                    <Navbar.Brand href="#"></Navbar.Brand>
+                    <Navbar.Brand href="#"><img src={corazon} alt="Logo" width="50px" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
@@ -33,8 +34,8 @@ const Layout = () => {
             </Navbar>
             <a href='https://www.monterrey-casanare.gov.co/' style={{position:"fixed", bottom:"2%", right:"2%"}}><img src={corazon} width="50px"/></a>
             <Outlet />
-
-        </section>
+            <Footer/>
+        </div>
     )
 }
 
