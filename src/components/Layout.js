@@ -14,7 +14,7 @@ const Layout = () => {
                     <img src={logo} width="100%" />
                 </figure>
             </header>
-            <Navbar bg='ligth' expand="lg" sticky='top'>
+            <Navbar bg='primary' expand="lg" sticky='top' variant="dark">
                 <Container fluid>
                     <Navbar.Brand href="#"><img src={corazon} alt="Logo" width="50px" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
