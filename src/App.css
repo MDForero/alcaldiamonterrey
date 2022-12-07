@@ -3,11 +3,12 @@
     background-size: cover;
     min-height: 70vh;
 }
+
 .contorno{
     background:#00fff712;
     border: solid 1px #00fff770;
-    box-shadow: 0px 0px 10px 1px #00fff770;
     height: fit-content;
+    border-radius: 5px;
 }
 .gap-10{
     display: grid;
@@ -161,6 +162,7 @@ footer div ul li {
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap:5px;
 }
 
 
