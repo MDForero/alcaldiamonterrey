@@ -4,13 +4,75 @@
     min-height: 70vh;
 }
 
-.contorno{
-    background:#00fff712;
+#empresas {
+    background: url("./images/comercio.jpg") no-repeat;
+    background-size: cover;
+    background-position: 50%;
+
+}
+
+#blog {}
+
+#registro {}
+
+#galeria {}
+
+/* Turismo */
+#turismo {
+    background: url("./images/algarrobos.jpg") no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+}
+
+.turismo {
+    height: 100vh;
+    text-align: justify;
+    color: white;
+}
+
+
+.overlay-turismo {
+    width: 100%;
+    height: 100%;
+    background: rgba(69, 69, 69, 0.465);
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.overlay-turismo div{
+    max-width: 550px;
+    width: 85%;
+}
+
+
+#roca {
+    background: url("./images/roca.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#tua {
+    background: url("./images/tua.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#caño {
+    background: url("./images/caño.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.contorno {
+    background: #00fff712;
     border: solid 1px #00fff770;
     height: fit-content;
     border-radius: 5px;
 }
-.gap-10{
+
+.gap-10 {
     display: grid;
     gap: 20px;
 }
@@ -83,7 +145,7 @@ a {
 }
 
 .figure::after {
-    content:"";
+    content: "";
     border-radius: 10px;
     grid-area: img;
     width: 100%;
@@ -162,7 +224,7 @@ footer div ul li {
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap:5px;
+    gap: 5px;
 }
 
 

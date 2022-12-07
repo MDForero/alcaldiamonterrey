@@ -1,8 +1,16 @@
 import React from 'react'
+import logo from "../images/corazon.png"
+
 
 const Blog = () => {
   return (
-    <div>Blog</div>
+    <div>
+      <main className='preview'>
+        <div className='overlay'>
+          <img src={logo} />
+        </div>
+      </main>
+    </div>
   )
 }
 
