@@ -348,13 +348,13 @@ export const comercios = [
         negocio: 'Hotel bonanza ',
         telefono: 3142322202,
         locacion: 'Cra 15 n 21-22',
-        ubicacion:"",
+        ubicacion:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d278.8852721969136!2d-72.89610504904265!3d4.883190034642952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ad330e775c2db%3A0x655946b127237b04!2sHotel%20Bonanza%20Bar%20Restaurante!5e0!3m2!1ses-419!2sco!4v1670531078395!5m2!1ses-419!2sco",
         redes: {
             facebook: "",
             instagram: "",
             whatsapp: ""
         },
-        descripcion:"",
+        descripcion:"El hotel bonanza se abrió a las puertas al público el día 7 de dic de 2021 nuestros servicios son de hotel incluye servicio de piscina y parqueadero y también se alquila para eventos y sus propietarios son Luis Enrique Escamilla y Patricia gracias Gómez el hotel es un habiente familiar estamos situados al lado de la naturaleza",
         categoria: 'Hotel '
     },
     {
@@ -642,7 +642,7 @@ export const comercios = [
             instagram: "",
             whatsapp: ""
         },
-        descripcion:"",
+        descripcion:"Dany FC es un proyecto  reciente, dedicado a la fabricación y venta de calzado para Dama, dando la opción a muchas mujeres de fabricarles diseños a su gusto y supliendo la necesidad de aquellas que no encuentran un calzado adecuado a la medida de su pie. Fabricamos chanclas, sandalias plataformas y próximamente tacones. Enfocados en mejorar día a día la calidad y diseños de nuestros productos",
         categoria: 'Calzado '
     },
     {

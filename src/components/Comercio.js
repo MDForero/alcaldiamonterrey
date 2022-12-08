@@ -29,12 +29,10 @@ const Comercio = ({ data }) => {
         <div>
            
                 <Link variant="primary" onClick={handleShow} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                    <figure className="figure" >
+                    <figure style={{overflow:"hidden", borderRadius:"10px"}}>
                         <img src={img} alt={nombre} style={{ position: "relative" }} className="img" />
                     </figure>
-                    <h1 style={{ position: "absolute", maxWidth: "300px" }}>{negocio}</h1>
-
-
+                    <h1 style={{ position: "absolute", maxWidth: "300px", color:"white" }}>{negocio}</h1>
                 </Link>
             
 

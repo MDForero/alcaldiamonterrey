@@ -37,7 +37,7 @@ const Layout = () => {
 
                 </Container>
             </Navbar>
-            <a href='https://www.monterrey-casanare.gov.co/' style={{ position: "fixed", bottom: "2%", right: "2%" }}><img src={corazon} width="50px" /></a>
+            <a href='https://www.monterrey-casanare.gov.co/' style={{ position: "fixed", bottom: "2%", right: "2%", zIndex:"1" }}><img src={corazon} width="50px" /></a>
             <Outlet />
             <Footer />
         </div>
