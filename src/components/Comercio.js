@@ -55,7 +55,7 @@ const Comercio = ({ data }) => {
                             </Carousel.Item>)}
                         </Carousel>
                     </section>
-                    <section style={{ display: "grid", gridTemplateColumns: "1fr 1fr", margin: "50px 0px", gap: "10px", textAlign: "justify" }}>
+                    <section className='info-modal responsive'>
                         <div className='container'>
                             <div className="gap-10">
                                 <div className='contorno container'>
@@ -95,7 +95,7 @@ const Comercio = ({ data }) => {
                                 </div>
                                 <div className='contorno'>
 
-                                    <iframe src={ubicacion} width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <iframe src={ubicacion} width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
                             </div>
                         </div>
