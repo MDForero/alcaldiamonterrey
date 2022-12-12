@@ -72,6 +72,9 @@
     justify-content: center;
     align-items: center;   
 }
+.turismo div div h3{
+    text-align: center;
+}
 
 .overlay-turismo div{
     max-width: 550px;
@@ -91,8 +94,19 @@
     background-attachment: fixed;
 }
 
-#caño {
-    background: url("./images/caño.jpg") no-repeat;
+#puente {
+    background: url("./images/puenteTabla.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50%;
+}
+#sol{
+    background: url("./images/piedraSol.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+#pozo{
+    background: url("./images/pozoAmor.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -270,7 +284,15 @@ footer div ul li {
         grid-template-rows: auto;
         gap: 10px;
     }
-
+    #tua{
+        background-position-x: 60%;
+    }
+    #sol{
+        background-position-x: center;
+    }
+    #pozo{
+        background-position-x: center;
+    }
     .g-title {
         grid-column: 1;
         grid-row: 1;
