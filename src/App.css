@@ -3,11 +3,14 @@
     background-size: cover;
     min-height: 70vh;
 }
-
+/* comercios */
 #empresas {
     background: url("./images/comercio.jpg") no-repeat;
     background-size: cover;
     background-position: 50%;
+}
+.card-negocios:hover{
+    cursor: pointer;
 
 }
 
@@ -43,6 +46,14 @@
 
 
 #registro {}
+.form{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1rem));
+    gap: 10px;
+}
+.textarea{
+    grid-column: 1/2 span;
+}
 
 #galeria {}
 
@@ -291,6 +302,9 @@ footer div ul li {
 
 
 @media screen and (max-width: 600px) {
+    .textarea{
+        grid-column: auto;
+    }
     .grid-store {
         display: grid;
         grid-template-columns: auto;

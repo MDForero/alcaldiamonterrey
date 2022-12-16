@@ -8,14 +8,29 @@ import ferreteria from "../images/ferreteria.jpg"
 import ropa from "../images/almacenesropa .jpg"
 import infografia from "../images/infografia.jpg"
 import { Link } from 'react-router-dom'
+import { Carousel, CarouselItem } from 'react-bootstrap'
+import { banners } from '../images/data'
+const [banner,  banner1, banner3]= banners
 
 const Inicio = () => {
   return (
     <div>
       <main className='preview'>
-        <div className='overlay'>
-          <img src={logo} />
-        </div>
+        <Carousel height="70hv" fade>
+         <CarouselItem interval={2000}>
+          <a href='registro'>
+            <img src={banner} width="100%" alt="registrate"/>
+          </a>
+          </CarouselItem>
+         <CarouselItem interval={2000}>
+          <a href='marketing_digital'>
+            <img src={banner1} width="100%" alt="Curso de marketing digital"/>
+          </a>
+          </CarouselItem>
+         <CarouselItem interval={2000}>
+            <img src={banner3} width="100%" alt=""/>
+          </CarouselItem>
+        </Carousel>
       </main>
       <section className='container grid-store'>
         <div className='g-title'><h1>Categorias destacadas</h1></div>

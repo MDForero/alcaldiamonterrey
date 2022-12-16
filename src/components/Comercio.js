@@ -2,83 +2,69 @@ import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-sv
 import { faMapLocationDot, faPhone, faPhoneSquare } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react'
-import { Button, Carousel, CarouselItem, Modal } from 'react-bootstrap';
+import { Button, Card, Carousel, CarouselItem, Modal } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
+import pendiente from "../images/pendiente.jpg"
 
 const Comercio = ({ data }) => {
-    const {
-        negocio,
-        img,
-        nombre,
-        carousel,
-        ubicacion,
-        redes,
-        descripcion,
-        horarios,
-        telefono,
-        locacion
-    } = data
-    const { instagram, whatsapp, facebook } = redes
+    const { img, direccion, descripcion, negocio, celular, redes, ubicacion } = data
+    let whatsapp = `https://wa.me/+57${celular}`
     const [show, setShow] = useState(false);
-
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
-
+    
     return (
         <div>
-           
-                <Link variant="primary" onClick={handleShow} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                    <figure style={{overflow:"hidden", borderRadius:"10px"}}>
-                        <img src={img} alt={nombre} style={{ position: "relative" }} className="img" />
-                    </figure>
-                    <h1 style={{ position: "absolute", maxWidth: "300px", color:"white" }}>{negocio}</h1>
-                </Link>
-            
+
+            <Card variant="primary" onClick={handleShow} className="card-negocios">
+                <Card.Header style={{height:"70px", display:"flex", justifyContent:"center", alignItems:"center", textTransform:"capitalize"}}>
+                    <h5 >{negocio}</h5>
+                </Card.Header>
+                <figure style={{ overflow: "hidden", borderRadius: "10px", height: "300px" }}>
+                    {img ?
+                        <img src={img[0]} alt={negocio} style={{ position: "relative", height: "400px" }} className="img" />
+                        : <img src={pendiente} alt={negocio} style={{ position: "relative" }} className="img" />
+
+                    }
+                </figure>
+            </Card>
+
 
             <Modal show={show} onHide={handleClose} fullscreen>
                 <Modal.Header closeButton>
-                    <Modal.Title>{nombre}</Modal.Title>
+                    <Modal.Title>{negocio}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <section style={{ height: "300px", overflow: "hidden" }}>
-                        <Carousel fade>
-                            {carousel.map((element) => <Carousel.Item interval={1000} >
+                    <section style={{ height: "600px", overflow: "hidden" }}>
+                        {img ? <Carousel fade>
+                            {img.map((element) => <Carousel.Item interval={1000} >
                                 <img
                                     className="d-block"
                                     src={element}
-                                    height="300px"
+                                    
                                     width="100%"
                                     alt=""
-                                    style={{ objectFit: "cover" }}
+                                    style={{ objectFit: "cover", scale:""}}
                                 />
                             </Carousel.Item>)}
-                        </Carousel>
+                        </Carousel> : null}
                     </section>
                     <section className='info-modal responsive'>
                         <div className='container'>
                             <div className="gap-10">
-                                <div className='contorno container'>
-
-                                    <h1>Acerca de nosotros</h1>
-                                    <p>{descripcion}</p>
-                                </div>
-                                <div className='contorno container'>
-                                    <h2>Horarios de atención</h2>
-                                    <dl>
-                                        {/* {Object.keys(horarios).map((element, index) => {
-                                            let values = Object.values(horarios)
-                                            return <><dt>{element}</dt><dd>{values[index]}</dd></>
-                                        })} */}
-                                    </dl>
-                                </div>
+                                {descripcion ?
+                                    <div className='contorno container'>
+                                        <h1>Acerca de nosotros</h1>
+                                        <p>{descripcion}</p>
+                                    </div> : null
+                                }
                                 <div className='contorno container'>
 
                                     <h2>Contactanos</h2>
 
                                     <div style={{ display: "grid" }}>
-                                        <a href={`tel:${telefono}`} ><FontAwesomeIcon icon={faPhone} style={{ margin: "0px 5px" }} />{telefono}</a>
-                                        <a href={`tel:${locacion}`} ><FontAwesomeIcon icon={faMapLocationDot} style={{ margin: "0px 5px" }} />{locacion}</a>
+                                        <a href={`tel:${celular}`} ><FontAwesomeIcon icon={faPhone} style={{ margin: "0px 5px" }} />{celular}</a>
+                                        {direccion ? <a href={`tel:${direccion}`} ><FontAwesomeIcon icon={faMapLocationDot} style={{ margin: "0px 5px" }} />{direccion}</a> : null}
                                     </div>
                                 </div>
                             </div>
@@ -88,15 +74,17 @@ const Comercio = ({ data }) => {
                                 <div className='contorno container'>
                                     <h2 style={{ textAlign: "center" }} >Redes sociales</h2>
                                     <ul style={{ display: "flex", listStyle: "none", justifyContent: "space-around" }}>
-                                        <li><a href={facebook}><FontAwesomeIcon icon={faFacebook} size="3x" /></a></li>
-                                        <li><a href={instagram}><FontAwesomeIcon icon={faInstagram} size="3x" /></a></li>
+                                        {redes ?
+                                            <><li><a href={redes.facebook}><FontAwesomeIcon icon={faFacebook} size="3x" /></a></li>
+                                                <li><a href={redes.instagram}><FontAwesomeIcon icon={faInstagram} size="3x" /></a></li></>
+                                            : null
+                                        }
                                         <li><a href={whatsapp}><FontAwesomeIcon icon={faWhatsapp} size="3x" /></a></li>
                                     </ul>
                                 </div>
-                                <div className='contorno'>
-
-                                    <iframe src={ubicacion} width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                </div>
+                                {ubicacion ? <div className='contorno'>
+                                    {ubicacion}
+                                </div> : null}
                             </div>
                         </div>
                     </section>
