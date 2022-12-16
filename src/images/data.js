@@ -50,6 +50,8 @@ import chulada from "./Negocios/principalachulada.jpg"
 import valthi from "./Negocios/principalalthi.jpg"
 import gamecenter from "./Negocios/principalamecenter.jpg"
 import canaima from "./Negocios/principalanaima.jpg"
+import canaima1 from "./Negocios/canaima1.jpg"
+import canaima3 from "./Negocios/canaima3.jpg"
 import piolina from "./Negocios/principalapiolina.jpg"
 import paradise from "./Negocios/principalaradise.jpg"
 import pasoReal from "./Negocios/principalasoReal.jpg"
@@ -62,10 +64,25 @@ import smithr from "./Negocios/principalmithr.jpg"
 import chocofantasy from "./Negocios/chocofantasy.jpg"
 import karate from "./Negocios/karate (4).jpg"
 
+// importaciones banners
 import banner from "./banner1.jpg"
 import banner1 from "./banner2.jpg"
 import banner3 from "./banner3.jpg"
 
+// importaciones marketing
+
+import marketing from "./marketing/marketing.jpeg"
+import marketing1 from "./marketing/marketingmarketing.jpg"
+import marketing2 from "./marketing/marketing(2).jpeg"
+import marketing3 from "./marketing/marketing(3).jpeg"
+import marketing4 from "./marketing/marketing(4).jpeg"
+import marketing5 from "./marketing/marketing(5).jpeg"
+import marketing6 from "./marketing/marketing(6).jpeg"
+import marketing7 from "./marketing/marketing(7).jpeg"
+import marketing8 from "./marketing/marketing(8).jpeg"
+import marketing9 from "./marketing/marketing(9).jpeg"
+import marketing10 from "./marketing/marketing(10).jpeg"
+import marketing11 from "./marketing/marketing(11).jpeg"
 
 export const comercios = [
     {
@@ -271,7 +288,13 @@ export const comercios = [
     },
     {
         nombre: 'Gustavo Córdoba ',
-        img:[canaima],
+        descripcion:<p>Somos un restaurante  campestre ubicado a las afueras de Monterrey Casanare, un lugar donde puede disfrutar de una excelente experiencia gastronómica, rodeado de naturaleza, un sendero ecológico y avistamiento de fauna y flora nativa, un sitio ideal para desconectarse de la tecnología y conectarse consigo mismo.</p>,
+        img:[canaima, canaima1, canaima3],
+        redes:{
+            instagram:" https://instagram.com/centroecoturisticocanaima/",
+            facebook:"https://web.facebook.com/ccanaima"
+        },
+        ubicacion:<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.521554206339!2d-72.89318608523712!3d4.851876596476928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ad38530c7c54b%3A0xef455ee14cf5bf5e!2sCanaima%20restaurante%20y%20centro%20ecoturistico!5e0!3m2!1ses-419!2sco!4v1671203153256!5m2!1ses-419!2sco" width="100%" height="450" loading="lazy" ></iframe>,
         negocio: 'Canaima centro ecoturístico ',
         celular: 3158419824
     },
@@ -478,5 +501,19 @@ export const comercios = [
 
 ]
 
-
 export const banners = [ banner,  banner1,  banner3]
+
+export const cursomarketing = [
+    marketing,
+    marketing1,
+    marketing2,
+    marketing3,
+    marketing4,
+    marketing5,
+    marketing6,
+    marketing7,
+    marketing8,
+    marketing9,
+    marketing10,
+    marketing11
+]
