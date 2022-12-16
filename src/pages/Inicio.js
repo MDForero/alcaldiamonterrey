@@ -15,7 +15,7 @@ const [banner,  banner1, banner3]= banners
 const Inicio = () => {
   return (
     <div>
-      <main className='preview'>
+      <main>
         <Carousel height="70hv" fade>
          <CarouselItem interval={2000}>
           <a href='registro'>

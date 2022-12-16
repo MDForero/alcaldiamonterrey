@@ -35,7 +35,7 @@ const Comercio = ({ data }) => {
                     <Modal.Title>{negocio}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <section style={{ height: "600px", overflow: "hidden" }}>
+                    <section className='carousel-comercio'>
                         {img ? <Carousel fade>
                             {img.map((element) => <Carousel.Item interval={1000} >
                                 <img
