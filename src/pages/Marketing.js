@@ -6,7 +6,6 @@ const Marketing = () => {
   return (
     <div>
       <main className='preview' id="marketing">
-        <img src={logo} style={{position:"absolute"}}/>
       </main>
       <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignContent: "center" }}>
         {cursomarketing.map((element) => <img src={element} alt="" className="marketing-img" />)}

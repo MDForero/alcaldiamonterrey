@@ -2,6 +2,7 @@
     background: url("images/1280px-La_Roca_y_el_puente.jpg") no-repeat;
     background-size: cover;
     min-height: 70vh;
+    width: 100%;
 }
 /* marketing */
 #marketing{
@@ -11,6 +12,8 @@
 .marketing-img{
     margin: 20px auto;
     box-shadow: 0px 0px 9px 10px;
+    width: 90%;
+
 }
 /* comercios */
 #empresas {
@@ -311,6 +314,10 @@ footer div ul li {
 
 
 @media screen and (max-width: 600px) {
+    #marketing{
+        min-height: 200px;
+        background-size: contain;
+    }
     .textarea{
         grid-column: auto;
     }
