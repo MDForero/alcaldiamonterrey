@@ -21,6 +21,14 @@
     background-size: cover;
     background-position: 50%;
 }
+.filtro{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,2fr));
+    text-align: center;
+    margin: 20px auto;  
+}
+
 .card-negocios:hover{
     cursor: pointer;
 }
@@ -32,8 +40,7 @@
 .info-modal {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-    margin: 50px 0px;
-    gap: 10px;
+    gap: 20px;
     text-align: justify
 }
 
@@ -311,7 +318,7 @@ footer div ul li {
     margin: 50px auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 5px;
+    gap: 20px;
 }
 
 
