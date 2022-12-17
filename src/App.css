@@ -4,42 +4,47 @@
     min-height: 70vh;
     width: 100%;
 }
+
 /* marketing */
-#marketing{
+#marketing {
     background: url("images/banner1.jpg") no-repeat;
     background-size: cover;
 }
-.marketing-img{
+
+.marketing-img {
     margin: 20px auto;
     box-shadow: 0px 0px 9px 10px;
     width: 90%;
 
 }
+
 /* comercios */
 #empresas {
     background: url("./images/comercio.jpg") no-repeat;
     background-size: cover;
     background-position: 50%;
 }
-.filtro{
+
+.filtro {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px,2fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
     text-align: center;
-    margin: 20px auto;  
+    margin: 20px auto;
 }
 
-.card-negocios:hover{
+.card-negocios:hover {
     cursor: pointer;
 }
-.carousel-comercio{
+
+.carousel-comercio {
     height: 600px;
     overflow: hidden;
 }
 
 .info-modal {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     text-align: justify
 }
@@ -68,12 +73,14 @@
 
 
 #registro {}
-.form{
-    display:grid;
+
+.form {
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1rem));
     gap: 10px;
 }
-.textarea{
+
+.textarea {
     grid-column: 1/2 span;
 }
 
@@ -321,20 +328,35 @@ footer div ul li {
     gap: 20px;
 }
 
-
+.hidden {
+    display: none;
+}
 
 @media screen and (max-width: 600px) {
-    .carousel-comercio{
+    .hidden {
+        display: inline;
+        margin: 0px auto;
+        text-align: center;
+    }
+
+    .infografia {
+        scale: 1.3;
+    }
+
+    .carousel-comercio {
         height: 300px;
         overflow: hidden;
     }
-    #marketing{
+
+    #marketing {
         min-height: 200px;
         background-size: contain;
     }
-    .textarea{
+
+    .textarea {
         grid-column: auto;
     }
+
     .grid-store {
         display: grid;
         grid-template-columns: auto;

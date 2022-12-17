@@ -26,8 +26,8 @@ const Empresas = () => {
       </div>
       <div>
         <ul className='filtro'>
-          <li><button type="checkbox" className='btn btn-primary' onClick={borrar}><h4>Quitar filtros</h4></button></li>
-          <li><button onClick={restaurant} style={{ display: "flex", }} className='btn btn-primary'><h4>Restuarante</h4></button></li>
+          <li><button className='btn btn-primary' onClick={borrar}><h4>Quitar filtros</h4></button></li>
+          <li><button onClick={restaurant} className='btn btn-primary'><h4>Restuarante</h4></button></li>
           <li><button onClick={salud} className='btn btn-primary'><h4>Salud y Belleza</h4></button></li>
           <li><button onClick={entretenimiento} className='btn btn-primary'><h4>Entretenimiento</h4></button></li>
           <li><button onClick={autoservicio} className='btn btn-primary'><h4>Autoservicio</h4></button></li>
