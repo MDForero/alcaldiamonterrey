@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Nav, Navbar } from 'react-bootstrap'
 import { Link, NavLink, Outlet } from 'react-router-dom'
 import logo from "../images/logoalcaldia.png"
+import corazonW from "../images/corazon-letras blancas.png"
 import corazon from "../images/corazon.png"
 import Footer from './Footer'
 
@@ -16,7 +17,7 @@ const Layout = () => {
             </header>
             <Navbar bg='primary' expand="lg" sticky='top' variant="dark">
                 <Container fluid>
-                    <Navbar.Brand href="#"><img src={corazon} alt="Logo" width="50px" /></Navbar.Brand>
+                    <Navbar.Brand href="#"><img src={corazonW} alt="Logo" width="50px" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse>
 

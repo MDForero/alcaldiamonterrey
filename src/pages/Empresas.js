@@ -5,10 +5,12 @@ import { comercios } from '../images/data'
 import logo from "../images/corazon.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUtensils } from '@fortawesome/free-solid-svg-icons'
+import { useLocation } from 'react-router-dom'
 
 
 const Empresas = () => {
-  const [filtro, setFiltro] = useState("")
+  const location = useLocation()
+  const [filtro, setFiltro] = useState(location.state ? location.state : "")
   const restaurant = () => setFiltro("comida")
   const salud = () => setFiltro("salud y belleza")
   const entretenimiento = () => setFiltro("entretenimiento")

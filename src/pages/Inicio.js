@@ -34,24 +34,24 @@ const Inicio = () => {
       </main>
       <section className='container grid-store'>
         <div className='g-title'><h1>Categorias destacadas</h1></div>
-        <Link className='categorys g1 figure' id='restaurante' to="">
+        <Link className='categorys g1 figure' id='restaurante' to="empresas" state={"comida"}>
           <img src={restaurant} className="img" id="restaurante"/>
           <span className="listing-badges">16 establecimientos</span>
         </Link>
-        <Link className='categorys g2 figure' id="drogueria" to="">
+        <Link className='categorys g2 figure' id="drogueria" to="empresas" state={"salud y belleza"}>
           <img className='img' src={drogueria} />
           <span className="listing-badges">16 establecimientos</span>
         </Link>
-        <Link className='categorys g3 figure' id="hotel" to="">
+        <Link className='categorys g3 figure' id="hotel" to="empresas" state={"autoservicio"}>
           <img className='img' src={hotel} />
           <span className="listing-badges">16 establecimientos</span>
 
         </Link>
-        <Link className='categorys g4 figure' id="ferreteria" to="">
+        <Link className='categorys g4 figure' id="ferreteria" to="empresas" state={"entretenimiento"}>
           <img className='img' src={ferreteria} />
           <span className="listing-badges">16 establecimientos</span>
         </Link>
-        <Link className='categorys g5 figure' id="ropa" to="">
+        <Link className='categorys g5 figure' id="ropa" to="empresas">
           <img className='img' src={ropa} />
           <span className="listing-badges">16 establecimientos</span>
         </Link>
