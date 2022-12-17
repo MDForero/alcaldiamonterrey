@@ -23,6 +23,7 @@ function App() {
           <Route path='galeria' element={<Galeria />} />
           <Route path='registro' element={<RegComercial />} />
         </Route>
+        <Route path="*" element={<Inicio/>}/>
       </Routes>
     </div>
   );
