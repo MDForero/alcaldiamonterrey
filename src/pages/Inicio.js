@@ -87,7 +87,6 @@ const Inicio = () => {
           <img src={paso1} alt="" width="100%" />
           <img src={paso2} alt="" width="100%" />
           <img src={paso31} alt="" width="100%" />
-          <img src={paso3} alt="" width="100%" />
         </div>
       </section>
     </div>
