@@ -30,7 +30,7 @@ const Layout = () => {
                             <NavLink className="nav-link" to="/" >Inicio</NavLink>
                             <NavLink className="nav-link" to="empresas">Comercio </NavLink>
                             <NavLink className="nav-link" to="contacto">Turismo</NavLink>
-                            <NavLink className="nav-link" to="blog">Blog</NavLink>
+                            <NavLink className="nav-link" to="blog">Eventos y Festividades</NavLink>
                             <NavLink className="nav-link" to="galeria">Galería</NavLink>
                             <NavLink className="nav-link" to="registro">Registro comercial</NavLink>
                         </Nav>

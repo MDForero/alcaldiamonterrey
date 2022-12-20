@@ -87,7 +87,7 @@ import marketing11 from "./marketing/marketing(11).jpeg"
 export const comercios = [
     {
         nombre: 'Patricia Merino',
-        img: [piolina, presentacionvalhti, lateralesvalhti, frontalvalhti],
+        img: [piolina],
         categoria: "autoservicio",
         negocio: 'La Piolina',
         descripcion: <div><p>Patricia Merino y su hijo Santiago Merino han sacado adelante una empresa que hoy por hoy se perfila como una de mayor crecimiento en el municipio, generan empleo, aportan al desarrollo económico y ponen a disposición de los regiomontunos un completo autoservicio, Verdurería, Carnicería y licorera; todo esto y mucho más en sus instalaciones sobre la calle 18.</p> <p> Hacer mercado en La Piolina es toda una experiencia, conseguir todo en un solo lugar es uno de muchos beneficios que tienen sus clientes, domicilio gratis y una atención personalizada es la clave del éxito que posiciona esta empresa como una de las mejores en Monterrey Casanare.</p></div>,

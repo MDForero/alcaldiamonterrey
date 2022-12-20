@@ -73,6 +73,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     justify-content: space-around;
+    align-items: baseline;
     width: 95%;
     margin: 50px auto;
     text-align: justify;
@@ -81,10 +82,13 @@
 
 .blog {
     width: 80%;
-    margin: auto auto;
+    margin: 0px auto;
     border-top: hidden;
     border-radius: 10px;
     overflow: hidden;
+}
+.blog div h3{
+    text-align: center;
 }
 
 
