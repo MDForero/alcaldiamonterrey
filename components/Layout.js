@@ -15,31 +15,8 @@ const Layout = () => {
                     <img src={logo} width="100%" />
                 </figure>
             </header>
-            <Navbar bg='primary' expand="lg" sticky='top' variant="dark">
-                <Container fluid>
-                    <Navbar.Brand href="#"><img src={corazonW} alt="Logo" width="50px" /></Navbar.Brand>
-                    <Navbar.Toggle aria-controls="navbarScroll" />
-                    <Navbar.Collapse>
-
-
-                        <Nav
-                            className="mx-auto my-2 my-lg-0"
-                            style={{ fontSize: "1.5rem" }}
-                            navbarScroll
-                        >
-                            <NavLink className="nav-link" to="/" >Inicio</NavLink>
-                            <NavLink className="nav-link" to="empresas">Comercio </NavLink>
-                            <NavLink className="nav-link" to="contacto">Turismo</NavLink>
-                            <NavLink className="nav-link" to="blog">Eventos y Festividades</NavLink>
-                            <NavLink className="nav-link" to="galeria">Galería</NavLink>
-                            <NavLink className="nav-link" to="registro">Registro comercial</NavLink>
-                        </Nav>
-                    </Navbar.Collapse>
-
-                </Container>
-            </Navbar>
+            
             <a href='https://www.monterrey-casanare.gov.co/' style={{ position: "fixed", bottom: "2%", right: "2%", zIndex:"1" }}><img src={corazon} width="50px" /></a>
-            <Outlet />
             <Footer />
         </div>
     )

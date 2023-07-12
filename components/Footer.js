@@ -2,7 +2,6 @@ import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-sv
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from "../images/corazon-letras blancas.png"
 
 const Footer = () => {
     return (

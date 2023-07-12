@@ -1,8 +1,1 @@
-{
-  "/page": "app/page.js",
-  "/empresas/page": "app/empresas/page.js",
-  "/galeria/page": "app/galeria/page.js",
-  "/regcomercial/page": "app/regcomercial/page.js",
-  "/turismo/page": "app/turismo/page.js",
-  "/marketing/page": "app/marketing/page.js"
-}
+{}
