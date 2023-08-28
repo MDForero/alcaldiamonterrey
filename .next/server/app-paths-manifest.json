@@ -1,1 +1,9 @@
-{}
+{
+  "/page": "app/page.js",
+  "/registro/page": "app/registro/page.js",
+  "/marketing/page": "app/marketing/page.js",
+  "/galeria/page": "app/galeria/page.js",
+  "/empresas/page": "app/empresas/page.js",
+  "/turismo/page": "app/turismo/page.js",
+  "/blog/page": "app/blog/page.js"
+}

@@ -71,7 +71,7 @@ const RegComercial = () => {
               <Button variant="danger" onClick={enviar}>Registro comercial</Button>
             </div>
           </form>
-          <a id="enviar" href=""></a>
+          <a id="enviar" href="#" className='display-none'>Hola</a>
         </div>
       </section>
     </div>

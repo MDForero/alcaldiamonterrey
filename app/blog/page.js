@@ -1,6 +1,5 @@
 import React from 'react'
 import logo from "../../images/corazon.png"
-import Imageprueba from "../../images/algarrobos.jpg"
 import cachodeoro from "../../images/cachodeoro.jpg"
 import paraulataDorada from "../../images/paraulataDorada.jpg"
 import semanaTecnica from "../../images/semanaTecnica.jpg"
@@ -8,6 +7,12 @@ import adoracionLLanera from "../../images/adoracion.jpg"
 import festival from "../../images/festival.jpg"
 import cabalgata from "../../images/cabalgata.jpg"
 import Image from 'next/image'
+
+export const metadata = {
+  title: 'Monterrey | Eventos y Festividades',
+  description: 'En esta sección encontrarás información sobre los eventos y festividades que se realizan en el municipio de Monterrey, Casanare.',
+  keywords:["Semana Técnica en Monterrey", "Festival de verano en Monterrey", "Festival de adoración llanera en Monterrey", "Festival de la Ceiba de Oro en Monterrey", "Festival del Río Túa en Monterrey", "Festival del Cacho de Oro en Monterrey"]
+} 
 
 export default function page () {
   return (

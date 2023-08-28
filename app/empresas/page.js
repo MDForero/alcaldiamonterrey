@@ -1,43 +1,23 @@
-"use client"
-import React, { useState } from 'react'
-import { Modal } from 'react-bootstrap'
-import Comercio from '../../components/Comercio'
-import { comercios } from '../../images/data'
 import logo from "../../images/corazon.png"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUtensils } from '@fortawesome/free-solid-svg-icons'
+import List from '../../components/List'
 
-
+export const metadata = {
+  title: "Comercios en Monterrey",
+  description: "En esta sección encontrarás información sobre los comercios que se encuentran en el municipio de Monterrey, Casanare.",
+  keywords:["Comercio en Monterrey", "Autoservicio en Monterrey", "Boutiques en Monterrey", "Carnicerías en Monterrey", "Cafeterías en Monterrey", "Droguerías en Monterrey", "Ferreterías en Monterrey", "Fruterías en Monterrey", "Heladerías en Monterrey", "Hoteles en Monterrey", "Jugueterías en Monterrey", "Librerías en Monterrey", "Panaderías en Monterrey", "Papelerías en Monterrey", "Peluquerías en Monterrey", "Restaurantes en Monterrey", "Supermercados en Monterrey", "Tiendas de ropa en Monterrey", "Tiendas de calzado en Monterrey", "Tiendas de electrodomésticos en Monterrey", "Tiendas de muebles en Monterrey", "Tiendas de tecnología en Monterrey", "Tiendas de deportes en Monterrey", "Tiendas de mascotas en Monterrey", "Tiendas de juguetes en Monterrey", "Tiendas de música en Monterrey", "Tiendas de videojuegos en Monterrey", "Tiendas de regalos en Monterrey", "Tiendas de artesanías en Monterrey", "Tiendas de antigüedades en Monterrey"]
+}
 const Empresas = () => {
-  const [filtro, setFiltro] = useState(location.state ? location.state : "")
-  const restaurant = () => setFiltro("comida")
-  const salud = () => setFiltro("salud y belleza")
-  const entretenimiento = () => setFiltro("entretenimiento")
-  const autoservicio = () => setFiltro("autoservicio")
-  const borrar = () => setFiltro("")
 
   return (
     <div>
       <div>
         <main className='preview' id="empresas">
           <div className='overlay'>
-            <img src={logo} />
+            <img src={logo} alt="logo"/>
           </div>
         </main>
       </div>
-      <div>
-        <ul className='filtro'>
-          <li><button className='btn btn-primary' onClick={borrar}><h4>Quitar filtros</h4></button></li>
-          <li><button onClick={restaurant} className='btn btn-primary'><h4>Restuarante</h4></button></li>
-          <li><button onClick={salud} className='btn btn-primary'><h4>Salud y Belleza</h4></button></li>
-          <li><button onClick={entretenimiento} className='btn btn-primary'><h4>Entretenimiento</h4></button></li>
-          <li><button onClick={autoservicio} className='btn btn-primary'><h4>Autoservicio</h4></button></li>
-        </ul>
-      </div>
-      <section className='container wrapper'>
-
-        {comercios.map((element) => filtro ? filtro == element.categoria ? <Comercio data={element} /> : null : <Comercio data={element} />)}
-      </section>
+      <List data={"path"}/>
     </div>
   )
 }

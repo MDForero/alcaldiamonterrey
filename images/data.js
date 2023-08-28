@@ -65,9 +65,10 @@ import chocofantasy from "./Negocios/chocofantasy.jpg"
 import karate from "./Negocios/karate (4).jpg"
 
 // importaciones banners
-import banner from "./banner1.jpg"
-import banner1 from "./banner2.jpg"
-import banner3 from "./banner3.jpg"
+import banner0 from "./Banner 1.jpg"
+import banner1 from "./Banner 2.jpg"
+import banner2 from "./Banner 3.jpg"
+import banner3 from "./Banner 4.jpg"
 
 // importaciones marketing
 
@@ -84,479 +85,1550 @@ import marketing9 from "./marketing/marketing(9).jpeg"
 import marketing10 from "./marketing/marketing(10).jpeg"
 import marketing11 from "./marketing/marketing(11).jpeg"
 
-export const comercios = [
-    {
-        nombre: 'Patricia Merino',
-        img: [piolina],
-        categoria: "autoservicio",
-        negocio: 'La Piolina',
-        descripcion: <div><p>Patricia Merino y su hijo Santiago Merino han sacado adelante una empresa que hoy por hoy se perfila como una de mayor crecimiento en el municipio, generan empleo, aportan al desarrollo económico y ponen a disposición de los regiomontunos un completo autoservicio, Verdurería, Carnicería y licorera; todo esto y mucho más en sus instalaciones sobre la calle 18.</p> <p> Hacer mercado en La Piolina es toda una experiencia, conseguir todo en un solo lugar es uno de muchos beneficios que tienen sus clientes, domicilio gratis y una atención personalizada es la clave del éxito que posiciona esta empresa como una de las mejores en Monterrey Casanare.</p></div>,
-        ubicacion: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.368866737893!2d-72.896354372795!3d4.877732046993831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ad373c5f30ccf%3A0xeaf381012bc0d47!2sDISTRICARNES%20LA%20PIOLINA!5e0!3m2!1ses-419!2sco!4v1671050372249!5m2!1ses-419!2sco" width="100%" height="450px" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        celular: 3106881055,
-    },
-    {
-        nombre: 'Andrea Castelblanco ',
-        img: [valthi, presentacionvalhti, lateralesvalhti, frontalvalhti],
-        categoria: "moda",
-        negocio: 'Valthi boutique',
-        descripcion: <p>Valthi Boutique es una tienda de prendas femeninas, allí podrás encontrar Jeans, Vestidos, Blusas, Accesorios y demás.  Si lo que quieres es vestir a la moda, la prendas de tendencia las encuentra allí. ¡Visítanos, Valthi Boutique te espera! Nos esperes mas para lucir como siempre has querido.</p>,
-        direccion: "Calle 17 #8-59",
-        celular: 3058693454,
-    },
-    {
-        nombre: 'Norida caro Acosta ',
-        categoria: "turismo",
-        negocio: 'Centro de información turístico ',
-        celular: 3123973575
-    },
-    {
-        nombre: 'Alejandro Monsalve',
-        img: [juanse, frontaljuanse, lateralesjuanse, presentacionjuanse],
-        categoria: "comida",
-        descripcion: <div><p>Los grandes negocios nacen de ideas pequeñas, llevan a sus protagonistas a una serie de retos, esfuerzos y sacrificios como los que ha tenido que enfrentar Maleja Monsalve, una joven emprendedora que teniendo un trabajo estable decide iniciar su emprendimiento, tener un poco más de tiempo para ella y su familia era su motivación y fue así como con pocos recursos dio vida a Meriendas Juanse, aunque inició muy bien y con mucha aceptación fue cuestión de meses para que iniciara la pandemia que la tendría trabajando estos 2 años desde casa.</p><p>Recientemente abrió su local donde los regiomontunos pueden encontrar desayunos Sorpresa, meriendas combinadas, anchetas, anchetas frutales, cajas dulceras y mucho más... sus clientas la recomiendan, no solo por la calidad de sus productos sino por la atención que la caracteriza.</p></div>,
-        negocio: 'Meriendas Juanse',
-        celular: 3213201072
-    },
-    {
-        nombre: 'Jenniffer Paola Campos',
-        img: [mela, presentacionmela, lateralesmela, frontalmela],
-        descripcion: <div><p>Jenniffer Campos y Sebastian Castillo son dos jóvenes emprendedores de nuestro municipio; desde hace poco más de 2 años por medio de Mela Boutique ellos comercializan ropa, artículos y accesorios para caballeros, encontrar ropa con diseños modernos o clásicos ajustados a las tendencias actuales es ahora más fácil para los regiomontunos en su tienda que se encuentra ubicada en la parte posterior del Banco de Bogotá.</p><p>
-            La pinta perfecta la podrá armar en Mela, ya que además de Jeans importados y nacionales también podrá encontrar busos seda fría, tipo polo, busos Philipp plein, bermudas en drill y Jeans, correas, gafas, gorras, bóxers y zapatillas.</p></div>,
-        negocio: 'MELABOUTIQUE',
-        categoria: "moda",
-        redes: {
-            instagram: "https://www.instagram.com/mela_boutique20/"
-        },
-        celular: 3134084828
-    },
-    {
-        nombre: 'Sol Angy Pérez Bohorquez ',
-        img: [chocofantasy, presentacionschocofantasy, lateralesschocofantasy, frontalschocofantasy],
-        negocio: 'Chocofantasy ',
-        categoria: "comida",
-        descripcion: <div>Ofrecemos una amplia variedad de soluciones en cuanto a  detalles elaborados a base de fruta y chocolate como: Fresas con chocolate, Anchetas, Cupcakes, Brownies... Entre otros. También ofrecemos el servicio de mesas de PASABOCAS dulces y salados para eventos.</div>,
-        redes: {
-            facebook: "https://www.facebook.com/chocofantasycolombia",
-            instagram: "https://www.instagram.com/chocofantasycolombia/"
-        },
-        celular: 3114604464
-    },
-    {
-        nombre: 'Johan Smith Rodríguez Romero ',
-        descripcion: <div><p>Johan Smith Rodríguez y Nasly Dayana Rodríguez son dos hermanos emprendedores que han puesto en marcha desde hace 2 años un proyecto comercial en nuestro municipio, hablar con ellos es hablar con personas muy preparadas que a pesar de su corta edad tienen un amplio conocimiento y con total apropiación de temas de mercadeo, producción y procesos saben lo que hacen y tienen metas claras, actualmente SMITHR promociona y vende no solo bolsos para dama, sino carteras, maquillaje y accesorios, que combinan con la belleza de cada una de las mujeres de nuestro departamento, Colombia y el mundo.</p><p>
+// importaciones botones de categorias de comercios monterrey
+import almacenes from "./botones/almacenes.png"
+import comidasrapidas from "./botones/comidasrapidas.png"
+import construccion from "./botones/construcción.png"
+import deporte from "./botones/deporte.png"
+import detalles from "./botones/detalles.png"
+import discotecas from "./botones/discotecas.png"
+import emergencias from "./botones/emergencias.png"
+import guiasTuristicos from "./botones/guiasturisticos.png"
+import hoteles from "./botones/hoteles.png"
+import moda from "./botones/moda.png"
+import restaurantes from "./botones/restaurantes.png"
+import serviciosvarios from "./botones/serviciosvarios.png"
+import tecnologia from "./botones/tecnologia.png"
+import viveres from "./botones/viveres.png"
 
-            SMITHR es una empresa que se proyecta a ser líder en el mercado de accesorios, en un futuro mediano esta empresa plantea elaborar estos productos de manera local con mano de obra calificada aportando no solo en la generación de empleos, sino en ampliar la oferta económica de nuestra región.</p></div>,
-        img: [smithr, presentacionsmitn, lateralessmitn, frontalsmitn],
-        categoria: "moda",
-        negocio: 'SMITHR’S Accesorios ',
-        celular: 3214469202
-    },
-    {
-        nombre: 'Yeimy Bermúdez ',
-        negocio: 'La Tiendita de Martín ',
-        celular: 3115018290
-    },
-    {
-        nombre: 'Yaris Viviana Galán ',
-        descripcion: <div><p>Desde 2017 Yaris Galán vio en sus habilidades artisticas una oportunidad para salir adelante, por esta razón en enero de ese año dío vida a la empresa que hoy conocemos como R&C Eventos; durante estos 6 años ha acompañado los regiomontunos a celebrar sus fechas especiales poniendo especial cuidado a cada detalle.</p><p>
-            R&C Eventos les ofrece el servicio de organización de eventos, todo en decoración de Bodas, 15 años, bautizo, grados, eventos empresariales, baby Shower, cumpleaños en general. </p></div>,
-        ubicacion: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d993.8407410166838!2d-72.89698567084368!3d4.878728836024711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ad320e51eae99%3A0x5360c5adda5d684!2sRyC%20Eventos!5e0!3m2!1ses-419!2sco!4v1671055375236!5m2!1ses-419!2sco" width="100%" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        redes: {
-            instagram: "https://www.instagram.com/ryceventosmonterrey",
-            facebook: "https://www.facebook.com/ryceventosmonterrey"
-        },
-        categoria: "eventos",
-        negocio: 'R&C Eventos ',
-        celular: 3107641506
-    },
-    {
-        nombre: 'Martha Cecilia Torres Gutierrez',
-        categoria: "moda",
-        img: [frontalcalzadoMatrix, lateralescalzadoMatrix, presentacioncalzadoMatrix],
-        negocio: 'Calzado y bisutería matrix',
-        descripcion: <p>Calzado y Bizuteria Matrix se dedica en la venta de calzado para dama y niñas  en diferentes estilos, bolsos, billeteras y todo lo relacionado con Bizuteria</p>,
-        direccion: "calle 17 nro 6-44 centro.",
-        celular: 3118125299
-    },
-    {
-        nombre: 'Jorge Armando Clavijo Angarita ',
-        categoria: "deporte",
-        img: [karate, presentacionschocokarate, lateralesschocokarate, frontalschocokarate],
-        negocio: 'Club de Karate Do Tora No Maki',
-        descripcion: <div><p>Creado en el año 2019 con tan solo 5 deportista, con más de 90 medallas a nivel departamental durante los últimos 2 años, a pesar de la pandemia continuamos con entrenamientos semi presencial y sumando logros para nuestros deportistas y reconocimiento de nuestro club.</p><p>El Club Tora No Maki Karate-Do busca Formar Karatecas con espíritu de Esfuerzo, Disciplina, Respeto. Formando Personas Íntegras y  Deportistas de Alto Rendimiento a Nivel Nacional.</p><p>Por medio de los altos estándares de entrenamiento, desarrollo de Habilidades Físicas y Motoras.</p></div>,
-        redes: {
-            facebook: "https://www.facebook.com/ToraNoMakiMonterrey?mibextid=ZbWKwL",
-            instagram: "https://www.instagram.com/toranomakikaratedo/"
-        },
-        celular: 3203405368
-    },
-    {
-        nombre: 'Juan David monsalve ',
-        categoria: "ferreteria",
-        img: [vidrieria, presentacionvidrieria, lateralesvidrieria, frontalvidrieria],
-        descripcion: <div><p>Juan David Monsalve es un joven emprendedor del municipio de Monterrey, con la meta clara de ser independiente desde hace más de 6 años decidió materializar su idea de negocio.</p><p>
-            El arte de convertir grandes láminas de vidrio y tiras de aluminio en elementos de uso cotidiano, con terminados cuidadosos que cumplen una función práctica y estética es la habilidad de Juan David y con lo cual se ha ganado el reconocimiento de los regiomontunos.
-            En Vidrios y aluminios la Primavera usted podrá encontrar Vidrio crudo, Vidrio templado, Vidrio laminado, Espejos, Acrílicos y toda clase de vidrios para ventanas, puertas, fachadas así mismo en aluminio: puertas para baño, puertas para alcobas, divisiones de baño, ventanas y otros similares. En vidrio templado, fachadas para locales, puertas en vidrio templado y divisiones en vidrio templado.</p></div>,
-        negocio: 'Vidrios y aluminios la primavera ',
-        celular: 3123944730
-    },
-    {
-        nombre: 'Mildred Perez',
-        categoria: "tecnologia",
-        descripcion: <p>Somos una empresa de tecnología e innovación te ofrecemos Celulares a crédito y contado, Televisores, Cabinas de sonido, Cámaras de seguridad, Ventiladores, Licuadoras, entre otros electrodomésticos.</p>,
-        img: [presentaciontecno, lateralestecno, frontaltecno],
-        negocio: 'Tecnocenter S y F',
-        direccion: "Calle 17 # 6 07 Centro",
-        redes: {
-            instagram: "https://www.instagram.com/tecnocentersyf/",
-            facebook: "https://www.facebook.com/TecnocenterSyF"
-        },
-        celular: 3112320590
-    },
-    {
-        nombre: 'Ingrid Geraldine cano romero',
-        categoria: "comida",
-        negocio: 'Restaurante y comidas rápidas arepa y tizon ',
-        celular: 3163409817
-    },
-    {
-        nombre: 'Yazmin Barrera',
-        categoria: "comida",
-        img: [pasoReal],
-        descripcion: <div><p>Yazmin Barrera Melo es una mujer emprendedora en nuestro municipio, muchos la conocemos por su establecimiento frente a la entrada principal de la Villa Olímpica, desde donde ofrece a los regiomontunos deliciosas comidas rápidas desde el 2019.</p><p>
-            Paso Real se ha convertido en una manera de generar ingresos y empleos directos, sus preparaciones dan con el gusto de diferente tipo de comensales, algunos la califican por sus deliciosas hamburguesas, otros por sus mazorcadas, sus wafles y hasta unos perros calientes diferentes a lo común.</p>
-            <p>La realidad es que Yazmin creo un lugar tranquilo y ameno, ideal para visitar con amigos, pareja o en fechas especiales y celebraciones.</p> </div>,
-        ubicacion: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.398638042371!2d-72.90129978583165!3d4.872701441500323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6acd95f6351e71%3A0x78545ecd57bbd130!2sPaso%20Real%20Monterrey!5e0!3m2!1ses-419!2sco!4v1671051366410!5m2!1ses-419!2sco" width="100%" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        negocio: 'Paso Real comidas rápidas ',
-        celular: 3132973853
-    },
-    {
-        nombre: 'Viviana Noa ',
-        categoria: "comida",
-        descripcion: <p>Cómida rapida artesanal y Platos a la carta.</p>,
-        redes: {
-            instagram: "https://www.instagram.com/lachuladafastfoodmonterrey/",
-            facebook: "https://web.facebook.com/LachuladafastfoodMonterrey"
-        },
-        img: [chulada],
-        negocio: 'La chulada fast food',
-        celular: 3104460617
-    },
-    {
-        nombre: 'Kelly echavarria',
-        img: [horaloca],
-        descripcion: <div><p>Kelly Echavarria es administradora de empresas y trabajó en la industria de los hidrocarburos hasta el 2016 cuando organizando su propia boda encontro afinidad y gusto por los detalles que crean momentos especiales, tal vez este proyecto dista mucho de lo que habia trabajando toda la vida pero su creatividad, empeño y amor que pone a cada elemento que sale de su tienda la convierte en #tendencia.</p><p>Actualmente Mi Hora Loca es una empresa muy reconocida y referente para comprar obsequios y decoración, aunque ultimamente han crecido y la venta de maquillaje, jugueteria y elementos de decoración la acerca mas a ser un MINISO regiomontuno.</p></div>,
-        ubicacion: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.3637060879223!2d-72.89828258583161!3d4.878603541449104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ad3f6c01f1bbd%3A0xebcbcb3ad72b41bf!2sALMAC%C3%89N%20MI%20HORA%20LOCA!5e0!3m2!1ses-419!2sco!4v1671053853528!5m2!1ses-419!2sco" width="100%" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        negocio: 'Mi hora loca',
-        categoria: "stan",
-        celular: 3004043401
-    },
-    {
-        nombre: 'Leídy Johana Parra Roa',
-        descripcion: <p>"Fegamallas" Es una empresa Regiomontana que fábrica toda clase de mallas eslabonada para encerramiento e instalaciones de la misma, contamos  con todas las   medidas que el cliente desee, también les ofrecemos malla para gaviones, soldadura, ángulos y elaboración de portones.</p>,
-        redes: { facebook: "https://web.facebook.com/julioarias.fegamallas" },
-        categoria: "ferreteria",
-        direccion: "Carrera 11 No. 29A-10",
-        negocio: 'Fegamallas ',
-        celular: 3157302018
-    },
-    {
-        nombre: 'Yaneth pinto marin',
-        img: [presentacionsalsamentaria, lateralessalsamentaria, frontalsalsamentaria],
-        categoria: "insumos",
-        negocio: 'Salsamentaria y plásticos la primavera',
-        celular: 3114841218
-    },
-    {
-        nombre: 'Diana esperanza naranjo',
-        img: [presentaciondulcearoma, lateralesdulcearoma, frontaldulcearoma],
-        negocio: 'My dulce aroma',
-        categoria: "perfumeria",
-        descripcion: <div><p>Somos my dulce aroma, una perfumeria con varios años de experiencia en el mercado, ubicada enel municipio de Monterrey, dedicados a la comercialización de fragancias, envases y  accesorios  para el sector cosmético. Ofrecemos el servicio de venta y fabricacion de perfumes. Contamos con un amplio portafolio de productos. envases de vidrio, envases Pet, difusores eléctricos de aroma, tapas y accesorios, entre otros insumos.</p> <p>Comercializamos las mejores marcas en fragancias  con los mas  altos estándares de calidad y durabilidad.</p> <p>Siempre dispuestos a ofrecer el mejores servicio brindandole a nuestros clientes una esperencia llena de  sensaciones inolvidable.</p></div>,
-        ubicacion: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.3498111989875!2d-72.89721478583162!3d4.880949241428745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ad27ec33fcdc3%3A0x5ce88962bd0e2a49!2sMy%20Dulce%20Aroma!5e0!3m2!1ses-419!2sco!4v1671054011882!5m2!1ses-419!2sco" width="100%" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        celular: 3215592491
-    },
-    {
-        nombre: 'Daniela González ',
-        categoria: "moda",
-        img: [presentacionDanyfc, frontalDanyfc, lateralesDanyfc],
-        negocio: 'Calzado Dany FC',
-        descripcion: "Dany FC es un proyecto  reciente, dedicado a la fabricación y venta de calzado para Dama, dando la opción a muchas mujeres de fabricarles diseños a su gusto y supliendo la necesidad de aquellas que no encuentran un calzado adecuado a la medida de su pie. Fabricamos chanclas, sandalias plataformas y próximamente tacones. Enfocados en mejorar día a día la calidad y diseños de nuestros productos.",
-        direccion: "Calle 17 #6-31",
-        celular: 3228107620
-    },
-    {
-        nombre: 'Jairo de Jesus Amaya Romero',
-        categoria: "tecnologia",
-        negocio: 'COMPUSISTEMAS',
-        celular: 3182442728
-    },
-    {
-        nombre: 'Mayra Alejandra Montes Reyes ',
-        categoria: "ips",
-        negocio: 'IPS NaturQuality ',
-        celular: 3114546635
-    },
-    {
-        nombre: 'Katerinn Poveda ',
-        categoria: "moda",
-        negocio: 'Kt fashion',
-        celular: 3226714263
-    },
-    {
-        nombre: 'Yeidy Alejandra Montenegro tejedor ',
-        categoria: "moda",
-        negocio: 'Modisteria',
-        celular: 3115728092
-    },
-    {
-        nombre: 'Gustavo Córdoba ',
-        categoria: "comida",
-        descripcion: <p>Somos un restaurante  campestre ubicado a las afueras de Monterrey Casanare, un lugar donde puede disfrutar de una excelente experiencia gastronómica, rodeado de naturaleza, un sendero ecológico y avistamiento de fauna y flora nativa, un sitio ideal para desconectarse de la tecnología y conectarse consigo mismo.</p>,
-        img: [canaima, canaima1, canaima3],
-        redes: {
-            instagram: " https://instagram.com/centroecoturisticocanaima/",
-            facebook: "https://web.facebook.com/ccanaima"
-        },
-        ubicacion: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.521554206339!2d-72.89318608523712!3d4.851876596476928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ad38530c7c54b%3A0xef455ee14cf5bf5e!2sCanaima%20restaurante%20y%20centro%20ecoturistico!5e0!3m2!1ses-419!2sco!4v1671203153256!5m2!1ses-419!2sco" width="100%" height="450" loading="lazy" ></iframe>,
-        negocio: 'Canaima centro ecoturístico ',
-        celular: 3158419824
-    },
-    {
-        nombre: 'Osman Orlando Rojas ',
-        negocio: 'Mayocate "mayonesa de Aguacate "',
-        categoria: "produccion",
-        celular: 3125184248
-    },
-    {
-        nombre: 'Claudia Lizeth Ramirez ',
-        negocio: 'Granja Agroecológica Jeska',
-        categoria: "granjas",
-        celular: 3124501264
-    },
-    {
-        nombre: 'Jessika morales',
-        negocio: 'Nails Art jessika morales ',
-        categoria: "moda",
-        celular: 3187724559
-    },
-    {
-        nombre: 'Luz Angela Parada Gámez ',
-        negocio: 'PASSARELLA X-live ',
-        categoria: "moda",
-        celular: 3215078492
-    },
-    {
-        nombre: 'Ana milena orozco',
-        categoria: "salud y belleza",
-        descripcion: <p style={{ textTransform: "initial" }}>ANITTA NAILS SALÓN DE BELLEZA</p>,
-        direccion: "CARRERA 11 20-36",
-        negocio: 'Anitta nails',
-        celular: 3208338233
-    },
-    {
-        nombre: 'Juliana Pachón',
-        negocio: 'Mercasanare',
-        categoria: "online",
-        celular: 3164175358
-    },
-    {
-        nombre: 'Lizeth Cordoba Pulido',
-        img: [blue],
-        descripcion: <div><p>Hoy les presentamos a Lizete Cordoba quien le da vida a Blue Gym, un centro de acondicionamiento físico que desde hace 7 años ha trabajado por la calidad de vida de los regiomontunos; Lizete es una persona que con su carisma y amabilidad motiva sus clientes para que por medio del ejercicio mejoren su estado físico y muchas veces hasta de ánimo, gracias a su amplio conocimiento son muchos los hombres y mujeres que han visto esos cambios que todos anhelamos.</p><p>       Blue gym recientemente reinauguró su sede y ofrece ahora un espacio más moderno donde personas de todas las edades llegan a compartir de un espacio sano.</p></div>,
-        categoria: "deporte",
-        ubicacion: <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d248.46088598314412!2d-72.88966009058633!3d4.876835339381716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1671054497985!5m2!1ses-419!2sco" width="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        negocio: 'gimnasio BLUE',
-        celular: 3133296281
-    },
-    {
-        nombre: 'Maria fernanda pinto',
-        img: [presentacionsurtidorllano, lateralessurtidorllano, frontalsurtidorllano],
-        categoria: "autoservicio",
-        descripcion: <p>Autoservicio Surtidor del llano ha estado siempre al servicio de la comunidad regiomontuna y del departamento, ofrecemos productos de muy buena calidad a precios muy económicos, estamos siempre dispuestos a servirte, con un servicio a domicilio y precios mucho más cómodos para el por mayor. Aquí podrás elegír la mercancía que desees adquirir, con la libertadad de que escojas la marca que desees y se acomode a tu economía, encontrarás artículos para el hogar, lácteos, licores, una sección de aseo, víveres y demás produtos. Te estaremos esperando, para tener el gusto de atenderte.</p>,
-        direccion: "carrera 11 - 19 B 32",
-        ubicacion: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.354602006628!2d-72.89763288553124!3d4.880140596456578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ad328c6d10d93%3A0x96d20f17d8ec769e!2sSurtidor%20del%20llano!5e0!3m2!1ses-419!2sco!4v1671114742924!5m2!1ses-419!2sco" width="100%" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        negocio: 'Autoservicio surtidor del llano',
-        celular: 3123161193
-    },
-    {
-        nombre: 'Melissa Pinto',
-        categoria: "stan",
-        img: [presentacionmarialolita, lateralesmarialolita, frontalmarialolita],
-        negocio: 'Maria lolita',
-        descripcion: <p>María Lolita Accesorios es un proyecto que empezó con la idea de ofrecer diferentes productos pensando en la economía del municipio, presta sus servicios de Lunes a domingo, de 9a.m. A 1p.m. Y de 3p.m. A 9p.m., aquí encontrarás diferentes productos de belleza, accesorios, detalles, perfumes, gorras, bolsos, maletas, pantuflas, relojes, lámparas, juguetes y demás productos para el hogar, dar un bonito detalle o para que te des un buen gusto, con productos de calidad y a precios muy bajos.</p>,
-        celular: 3123161193,
-        direccion: "Carrera 11 N. 19 - 66 Barrio Alcaraván. (Al lado de María Mulata).",
-        redes: {
-            instagram: "https://www.instagram.com/maria_lolitacc/"
-        }
-    },
-    {
-        nombre: 'Alba Luz Sanchez',
-        categoria: "salud y belleza",
-        descripcion: <p>venta distribución y afiliación de productos nutricionales y de belleza</p>,
-        direccion: "calle 13A Nro 1-90",
-        negocio: 'Omlyline',
-        celular: 3114822343
-    },
-    {
-        nombre: 'Luz Dari',
-        categoria: "Hotel",
-        negocio: 'Terraza Hotel',
-        celular: 3132623176
-    },
-    {
-        nombre: 'Diego Andrés Piñeros Castañeda',
-        negocio: 'Alevinos Tigrana Alta',
-        categoria: "produccion",
-        celular: 3142184754
-    },
-    {
-        nombre: 'Andrea Christina Egli Egli',
-        negocio: 'Emprendimiento digital',
-        categoria: "online",
-        celular: 3125751181
-    },
-    {
-        nombre: 'zuly viviana guerrero gomez',
-        negocio: 'Granja agroecoturistica las palmas',
-        categoria: "granja",
-        descripcion: " Tenemos el gusto de ofrecerle pollos semicriollos, cerdos, huevos semicriollos y pezcado, reserva tu pedido ahora, entrega inmediata, te damos crédito 💳 productos llenos de amor, alta calidad, higiene, Frescos, deliciosos y  nutritivos, del campo a su mesa, para toda su familia. 🛵Domicilio gratis 🏘️Inf: 3202232497 Zuly Gómez",
-        celular: 3202232497
-    },
-    {
-        nombre: 'Osman Orlando Rojas ',
-        negocio: 'Montecate',
-        categoria: "produccion",
-        celular: 3125184248
-    },
-    {
-        nombre: 'Michell Walteros',
-        negocio: 'Keralife',
-        categoria: "salud y belleza",
-        celular: 3132049907
-    },
-    {
-        nombre: 'Diana Torres',
-        categoria: "otros negocios",
-        negocio: 'Villa Feliz Ecolodge',
-        celular: 3125808133
-    },
-    {
-        nombre: 'Lizeth Juliana Caballero Bulla',
-        categoria: "salud y belleza",
-        negocio: 'Distribuidora de esmaltes Daniela Bulla',
-        celular: 3214756473
-    },
-    {
-        nombre: 'Orley Gaitan',
-        img: [gamecenter],
-        categoria: "entretenimiento",
-        negocio: 'Game Center',
-        celular: 3112175389
-    },
-    {
-        nombre: 'Javier Arias',
-        categoria: "publicidad",
-        negocio: 'Innova',
-        celular: 3133898130
-    },
-    {
-        nombre: 'Anner orozco',
-        categoria: "salud y belleza",
-        negocio: 'el costa barber',
-        celular: 3187836374
-    },
-    {
-        nombre: 'diego cruz',
-        categoria: "comida",
-        negocio: 'maria mulata ',
-        celular: 3214910603
-    },
-    {
-        nombre: 'deisy paola cachay ',
-        categoria: "salud y belleza",
-        negocio: 'nuevo brillo ',
-        celular: 3144939093
-    },
-    {
-        nombre: 'natalia hernandez',
-        negocio: 'belleza grilt',
-        categoria: "salud y belleza",
-        celular: 3115679267
-    },
-    {
-        nombre: 'yorlay cubides ',
-        descripcion: <div>
-            <p>Emprendimiento que ofrece servicios de alojamiento, restaurante y parque infantil con un excelente espacio en contacto con la naturaleza, reserva tu evento al </p>
-        </div>,
-        categoria: "hotel",
-        redes: {
-            facebook: "https://web.facebook.com/elmiradorpanorama",
-            instagram: "https://www.instagram.com/elmiradorpanorama/"
-        },
-        ubicacion: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.3746507641954!2d-72.90332328553106!3d4.876755096459018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6acdcb43a6b649%3A0xae93f5ef74202964!2sEl%20Mirador%20Panorama!5e0!3m2!1ses-419!2sco!4v1671114144542!5m2!1ses-419!2sco" width="100%" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        negocio: 'mirador panorama',
-        direccion: "calle 14a 15 101",
-        celular: 3202336531
-    },
-    {
-        nombre: 'esmeralda gutierrez',
-        img: [paradise],
-        descripcion: <div><p>En medio de la crisis económica que causó la Pandemia y que afectó a la población mundial, la regiomontuna Esmeralda Gutierrez vio con la autodenominada "Reactivación económica", la oportunidad de crear empresa; es así que desde el 12 de octubre de 2020 surgió en Monterrey Casanare Paradise "Coffee - Cocktail - Bar", un lugar en donde se puede disfrutar del mejor fútbol del Mundo ⚽🥅 en pantalla 4k y canales exclusivos, acompañados de una gran variedad de bebidas frías y calientes a base de café "con y sin licor", Cocktails, malteadas, jugos naturales, micheladas y próximamente pasabocas y postres a basé de café...</p></div>,
-        categoria: "entretenimiento",
-        redes: {
-            instagram: "https://www.instagram.com/cafebarparadise12/",
-            facebook: "https://www.facebook.com/Paradise-Coffee-Cocktail-Bar-102634254965469/"
-        },
-        ubicacion: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.3742550458146!2d-72.89941048583171!3d4.876821941464568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ad3d358b9fb17%3A0xbb469e4492d3d37e!2sPARADISE%20COFFEE%20COCKTAIL%20BAR!5e0!3m2!1ses-419!2sco!4v1671051126053!5m2!1ses-419!2sco" width="100%" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
-        negocio: 'paradise',
-        celular: 3222455958
-    },
-    {
-        nombre: 'marlin cruz ',
-        negocio: 'el eden',
-        categoria: "otros",
-        celular: 3228882713
-    },
-    {
-        nombre: 'fabian piñeros ',
-        negocio: 'fama de jota',
-        categoria: "carniceria",
-        celular: 3203912079
-    },
-    {
-        nombre: 'lina magaly fernandez ',
-        negocio: 'sol y sombra ',
-        celular: 3156842430
-    },
-    {
-        nombre: 'mariam muñoz',
-        negocio: 'tienda de ropa mariam',
-        categoria: "moda",
-        celular: 3006284006
-    },
-    {
-        nombre: 'jessica acosta ',
-        negocio: 'taller y creaciones mia ',
-        celular: 3112138471
-    },
-    {
-        nombre: 'milba daza monroy ',
-        categoria: "salud y belleza",
-        negocio: 'peluqueria maury ',
-        celular: 3102100033
-    },
-    {
-        nombre: 'armando martinez',
-        negocio: 'centro agroturistico las heliconias',
-        categoria: "granja, turismo",
-        celular: 3113917029
-    }
+export const comercios = [{
+    id: 1,
+    categoria: "TIENDA DE ROPA",
+    comercio: "MELA BOUTIQUE",
+    telefono: 3125301867,
+    direccion: "Calle 17#5-57 centro",
+    propietario: "Jenniffer Paola Campos"
+}, {
+    id: 2,
+    categoria: "TIENDA DE ROPA",
+    comercio: "Men's Store ",
+    telefono: 3107385619,
+    direccion: "Calle 15#11-23",
+    propietario: "Camilo Andrés Jiménez Arévalo"
+}, {
+    id: 3,
+    categoria: "CAFETERIA Y PANADERIA",
+    comercio: "Postre Home",
+    telefono: 3212111891,
+    direccion: "Calle 16#11-27",
+    propietario: "Vanessa Cano"
+}, {
+    id: 4,
+    categoria: "OFICINAS PROFESIONALES",
+    comercio: "Lvega Seguros Ltda",
+    telefono: 3112662273,
+    direccion: "Carrera 6 16 51 barrio centro",
+    propietario: "Leidin Vega Monroy"
+}, {
+    id: 5,
+    categoria: "AUTOMOTORES",
+    comercio: "Estación de Servicio Monterrey",
+    telefono: 3102877023,
+    direccion: "Calle 24 # 11- 26",
+    propietario: "Enith Viviana González Perilla"
+}, {
+    id: 6,
+    categoria: "SERVICIOS",
+    comercio: "Sweet Nana",
+    telefono: 3114557542,
+    direccion: "Vía Instagram",
+    propietario: "Ana María Doncel Umaña"
+}, {
+    id: 7,
+    categoria: "DEPORTES",
+    comercio: "Torá No Maki Karate-Do",
+    telefono: 3203405368,
+    propietario: "Jorge Armando Clavijo"
+}, {
+    id: 8,
+    categoria: "COMIDAS RAPIDAS",
+    comercio: "Paso real comidas rapidas",
+    telefono: 3132973853,
+    direccion: "Carrera 11 No 10 -75",
+    propietario: "Yazmin Barrera "
+}, {
+    id: 9,
+    categoria: "SERVICIOS",
+    comercio: "JMora EsculToro ",
+    telefono: 3202794531,
+    direccion: "Calle 4 #10 a 52",
+    propietario: "Jaiver Mora"
+}, {
+    id: 10,
+    categoria: "TIENDA DE ROPA",
+    comercio: "Smithr's Accesorios",
+    telefono: 3214469202,
+    direccion: "Calle 18 número 11/48 los LANCEROS",
+    propietario: "Johan Smith Rodríguez Romero"
+}, {
+    id: 11,
+    categoria: "VIVERES",
+    comercio: "Distribuidora y Salsamentaria Villa del Prado ",
+    telefono: 3144223257,
+    direccion: "Carrera 11 # 22 23 ",
+    propietario: "Diana Manuela Leguizamon Borda "
+}, {
+    id: 12,
+    categoria: "TIENDAS DE ROPA",
+    comercio: "Variedades Shariskat",
+    telefono: 3204957260,
+    direccion: "Carrera 12#26-05",
+    propietario: "Katherine Huertas Mariño"
+}, {
+    id: 13,
+    categoria: "COMIDAS RAPIDAS",
+    comercio: "Pa'comelo Junior",
+    telefono: 3229318849,
+    direccion: "Calle 18a #11-07",
+    propietario: "Brayan Quevedo y Julia Camacho"
+}, {
+    id: 14,
+    categoria: "COMIDAS RAPIDAS",
+    comercio: "PINOS PIZZA",
+    telefono: 3132452144,
+    direccion: "Carrera 10 #. 17-98",
+    propietario: "Yeison Celis Barrero"
+}, {
+    id: 15,
+    categoria: "ALMACEN",
+    comercio: "Dotaciones y servicios industriales del llano sas",
+    telefono: 3102969136,
+    direccion: "carrera 11 No 21-26",
+    propietario: "Yeni Yohana Motavita Martinez"
+}, {
+    id: 16,
+    categoria: "TECNOLOGIA",
+    comercio: "CLINISOFT INTERNATIONAL",
+    telefono: 3112239530,
+    direccion: "Calle 15 # 11-28 ",
+    propietario: "Rulber Enrique Silva"
+}, {
+    id: 17,
+    categoria: "BELLEZA",
+    comercio: "Joyería Indigo",
+    telefono: 3105744302,
+    direccion: "Calle 17 #6-50",
+    propietario: "Rossi Arias"
+}, {
+    id: 18,
+    categoria: "TIENDA DE ROPA",
+    comercio: "Valthi Boutique",
+    telefono: 3058693454,
+    direccion: "Calle 17 #8-59",
+    propietario: "Andrea Castelblanco Barreto"
+}, {
+    id: 19,
+    categoria: "OFICINAS PROFESIONALES",
+    comercio: "Servicios Integrales de Tránsito ",
+    telefono: 3188743622,
+    direccion: "Carrera 7 N° 17 - 36 Centro ",
+    propietario: "Miguel Alejandro Pinto López "
+}, {
+    id: 20,
+    categoria: "BELLEZA",
+    comercio: "Lessyhi Estética Integral Y Spa",
+    telefono: 3203722508,
+    direccion: "Carrera 11 #13-53 Alfonso López",
+    propietario: "lessyhi Nikoll Gaitán Vargas"
+}, {
+    id: 21,
+    categoria: "RESTAURANTES",
+    comercio: "Restaurante y piqueteadero Mi mama",
+    telefono: 3118117017,
+    direccion: "Calle 20# 10 -35",
+    propietario: "Blanca Aurora Gaitan"
+}, {
+    id: 22,
+    categoria: "SALUD",
+    comercio: "Drogueria Los Trillizos ",
+    telefono: 3022235120,
+    direccion: "Carrera 11 # 21A-37",
+    propietario: "Blanca Nieves Garizabal Zarate "
+}, {
+    id: 23,
+    categoria: "FERRETERIAS",
+    comercio: "Mallaran ",
+    telefono: 3156684736,
+    direccion: "CALLE 1A 10A 39",
+    propietario: "Alexander baez "
+}, {
+    id: 24,
+    categoria: "TIENDA DE ROPA",
+    comercio: "La Tiendita de Martín ",
+    telefono: 3115018290,
+    direccion: "Calle 14 N. 11-26",
+    propietario: "Yeimy Yesenia Bermúdez "
+}, {
+    id: 25,
+    categoria: "BELLEZA, SALONES DE ",
+    comercio: "Anayibe Torres PELUQUERIA",
+    telefono: 3204656065,
+    direccion: "Calle 18 # 10-02",
+    propietario: "Anayibe Torres"
+}, {
+    id: 26,
+    categoria: "VIVERES",
+    comercio: "Tienda San Felipe",
+    telefono: 3165772963,
+    direccion: "Calle 24 #11-07",
+    propietario: "Tatiana Rodriguez"
+}, {
+    id: 27,
+    categoria: "FERRETERIAS",
+    comercio: "Comercializadora Ferreruedas S.A.S",
+    telefono: 3114772573,
+    direccion: "Calle18 8-68",
+    propietario: "Jhoanna Higuera"
+}, {
+    id: 28,
+    categoria: "VIVERES",
+    comercio: "LLANOVENTAS AUTOSERVICIO",
+    telefono: 3112620540,
+    direccion: "Calle 17 # 7 - 76 / 80",
+    propietario: "Luis Eduardo Contreras Romero"
+}, {
+    id: 29,
+    categoria: "TECNOLOGIA",
+    comercio: "Mercasanare Latinoamérica",
+    telefono: 3164175358,
+    direccion: "Bellavista",
+    propietario: "Camilo Andrés Trujillo Alvarez"
+}, {
+    id: 30,
+    categoria: "COMIDAS",
+    comercio: "La Lechona de Martín ",
+    telefono: 3115018290,
+    direccion: "Calle 14 N 11-26",
+    propietario: "Yeimy Bermúdez "
+}, {
+    id: 31,
+    categoria: "FERRETERIAS",
+    comercio: "FERRECONSTRUCCIONES AMBIENTALES LA ROCA",
+    telefono: 3222002649,
+    direccion: "Carrera 1 A N 18-17 FLORESTA",
+    propietario: "Jonathan Beltran"
+}, {
+    id: 32,
+    categoria: "AGRO Y VETERINARIAS",
+    comercio: "Clínica Veterinaria Huella Animal",
+    telefono: 3143227445,
+    direccion: "Calle 14 # 12 - 28",
+    propietario: "Karen Rojas Romero"
+}, {
+    id: 33,
+    categoria: "SALUD",
+    comercio: "Dr. Heiner Rincón Odontología",
+    telefono: 3103745343,
+    direccion: "Carrera 11 # 14 - 79 Barrio Centro ",
+    propietario: "Heiner Enoc Rincón Niño"
+}, {
+    id: 34,
+    categoria: "BELLEZA",
+    comercio: "Inspira.accesorioss ",
+    telefono: 3118956122,
+    direccion: "Barrio alfonso lopez",
+    propietario: "Clara peña"
+}, {
+    id: 35,
+    categoria: "AUTOMOTORES",
+    comercio: "Stickers Zone Almacen y Taller",
+    telefono: 3223642243,
+    direccion: "Calle 20 Nª8-89 Alcaravanes",
+    propietario: "Elmer Contreras"
+}, {
+    id: 36,
+    categoria: "TURISMO",
+    comercio: "Centro Ecoturistico Canaima",
+    telefono: 3158419824,
+    direccion: "Finca Canaima ",
+    propietario: "Gustavo Adolfo cordoba pulido "
+}, {
+    id: 37,
+    categoria: "TIENDA DE ROPA",
+    comercio: "Verona",
+    telefono: 3207833190,
+    direccion: "Carrera 11 #21-26",
+    propietario: "Carlos Hernando Moreno Salas"
+}, {
+    id: 38,
+    categoria: "COMIDAS RAPIDAS",
+    comercio: "AMALU PIZZERÍA",
+    telefono: 3185909806,
+    direccion: "Calle 19#6-36",
+    propietario: "Luz Marina cespedes"
+}, {
+    id: 39,
+    categoria: "HOTELES",
+    comercio: "Hotel San Pedro",
+    telefono: 3204223341,
+    direccion: "Carrera 7 # 20-70",
+    propietario: "Sandra Patricia Pinzón Rojas"
+}, {
+    id: 40,
+    categoria: "TIENDA DE ROPA",
+    comercio: "Pañalera Baby Yuliana",
+    telefono: 3204223341,
+    direccion: "Carrera 11 # 14-79 local 2",
+    propietario: "Sandra Patricia Pinzón Rojas"
+}, {
+    id: 41,
+    categoria: "AUTOMOTORES",
+    comercio: "Lavadero la Septima",
+    telefono: 3106970427,
+    direccion: "Carrera 7 N 19 07",
+    propietario: "Miyer Alexander Mendoza Arias "
+}, {
+    id: 42,
+    categoria: "COMIDAS",
+    comercio: "San Isidro - Bastimento Llanero ",
+    telefono: 3118768140,
+    direccion: "Calle 16 #2-63",
+    propietario: "David Corredor "
+}, {
+    id: 43,
+    categoria: "COMIDAS",
+    comercio: "Buenavistacafebar",
+    telefono: 3115783079,
+    direccion: "Km9 vía alterna Tauramena monterrey ",
+    propietario: "Angélica Pérez Contreras "
+}, {
+    id: 44,
+    categoria: "COMIDAS",
+    comercio: "The Green Paradise",
+    telefono: 3188759683,
+    direccion: "Km 9 vía alterna de monterrey a Tauramena vereda Buenavista",
+    propietario: "Juana Josefa Contreras"
+}, {
+    id: 45,
+    categoria: "ALMACEN",
+    comercio: "DISTRISEG CASANARE",
+    telefono: 3102885880,
+    direccion: "CARRERA 11 No. 22-06",
+    propietario: "Hermi Gladyson Acevedo Gomez"
+}, {
+    id: 46,
+    categoria: "DETALLES",
+    comercio: "Mundo de gomas KN",
+    telefono: 3237805405,
+    direccion: "Online",
+    propietario: "Angie Nahomy López Mur "
+}, {
+    id: 47,
+    categoria: "EVENTOS",
+    comercio: "Any Leguizamón eventos",
+    telefono: 3204429359,
+    direccion: "Carrera 5# 18/31 primavera",
+    propietario: "Suranyelli Leguizamón"
+}, {
+    id: 48,
+    categoria: "TIENDA DE ROPA",
+    comercio: "MUNDO CROCS MONTERREY ",
+    telefono: 3212401026,
+    direccion: "CALLE 22A #11 23 VILLA DEL PRADO ",
+    propietario: "Hector Ariel Caro Avila "
+}, {
+    id: 49,
+    categoria: "ALMACEN",
+    comercio: "Maria Lolita Accesorios",
+    telefono: 3112426762,
+    direccion: "Carrera 11 N° 19 - 66 Barrio Alcaravan",
+    propietario: "Loren Melissa Pinto"
+}, {
+    id: 50,
+    categoria: "SALUD",
+    comercio: "Fisioline, Estética y Rehabilitación ",
+    telefono: 3212428965,
+    direccion: "Calle 13 A #13-14",
+    propietario: "Luz Ángela Barón Barajas "
+}, {
+    id: 51,
+    categoria: "DETALLES",
+    comercio: "Meriendas Juanse ",
+    telefono: 3213201072,
+    direccion: "Carrera 4a # 19 - 71",
+    propietario: "Alejandra Monsalve "
+}, {
+    id: 52,
+    categoria: "OFICINAS PROFESIONALES",
+    comercio: "SACOL INGENIERÍA SAS ",
+    telefono: 3115026472,
+    direccion: "Calle 5a sur# 11-31",
+    propietario: "Jaime Bernal "
+}, {
+    id: 53,
+    categoria: "COMIDAS",
+    comercio: "MOCAFÉ BAR Y RESTAURANTE",
+    telefono: 3112250374,
+    direccion: "Calle 22a n 20 96 Barrio Brisas Del Túa ",
+    propietario: "Nilce Aidee Velandia Contreras "
+}, {
+    id: 54,
+    categoria: "ALMACEN",
+    comercio: "BICICLETERIA GOLD BIKE ",
+    telefono: 3232245565,
+    direccion: "Calle 17 no. 7-40 ",
+    propietario: "Verónica González Hernández "
+}, {
+    id: 55,
+    categoria: "TIENDA DE ROPA",
+    comercio: "Primavera moda infantil ",
+    telefono: 3214527319,
+    direccion: "Calle 17 # 7- 46",
+    propietario: "Héctor arbey vacca "
+}, {
+    id: 56,
+    categoria: "CONSTRUCCION",
+    comercio: "Vidrios y aluminios la primavera ",
+    telefono: 3123944730,
+    direccion: "Carrera 4 - 20 - 41",
+    propietario: "Juan David Monsalve Obando"
+}, {
+    id: 57,
+    categoria: "BARBERIA",
+    comercio: "BARBER SHOP CARTELUOS",
+    telefono: 3123628491,
+    direccion: "Carrera 11 19 ~ 66 ",
+    propietario: "Jennifer Tatiana Riofrio "
+}, {
+    id: 58,
+    categoria: "RESTAURANTES",
+    comercio: "BoyRanch",
+    telefono: 3133597182,
+    direccion: "Via alterna Monterrey-Tauramena Km 1,3 ",
+    propietario: "Omar Ricardo Niño Morales "
+}, {
+    id: 59,
+    categoria: "SALON DE BELLEZA",
+    comercio: "Miss Glamurosas 👑",
+    telefono: 3213112121,
+    direccion: "Carrera 11 #19 -06 Barrio Alcaravanes ",
+    propietario: "Edna Viviana Cristancho Benavides"
+}, {
+    id: 60,
+    categoria: "AUTOMOTORES",
+    comercio: "Lubricantes el transportador r&d",
+    telefono: 3102045078,
+    direccion: "Km 1 transversal 4 sector leche miel vía marginal a la selva ",
+    propietario: "Paola Martinez "
+}, {
+    id: 61,
+    categoria: "RESTAURANTES",
+    comercio: "Asadero guatecano",
+    telefono: 3118028144,
+    direccion: "Entrada vía alterna",
+    propietario: "Eduardo Martínez "
+}, {
+    id: 62,
+    categoria: "TURISMO",
+    comercio: "Las Heliconias centro agroturistico ",
+    telefono: 3114886521,
+    direccion: "Vereda Bella Vista, Sector Bugambiles",
+    propietario: "Diego martinez y Eulalia salinas"
+}, {
+    id: 63,
+    categoria: "BARBERIA",
+    comercio: "The Classic man barberia ",
+    telefono: 3203677949,
+    direccion: "Calle 18 9-59",
+    propietario: "David Rivero "
+}, {
+    id: 64,
+    categoria: "HOTELES",
+    comercio: "Hotel Bonanza ",
+    telefono: 3142322202,
+    direccion: "Carrera 15 21A 22 Barrio caney",
+    propietario: "Luis Enrique Escamilla "
+}, {
+    id: 65,
+    categoria: "VIVERES",
+    comercio: "GRANJA VILLA JUANITA",
+    telefono: 3105801389,
+    direccion: "KM.8.8 Vía Monterrey—Aguazul Vereda Bellavista",
+    propietario: "Juan Carlos Chaparro"
+}, {
+    id: 66,
+    categoria: "OFICINAS PROFESIONALES",
+    comercio: "E & J CONSULTORES SAS",
+    telefono: 3115875480,
+    direccion: "Carrera 6 # 15 16",
+    propietario: "Jose Edwin Jimenez Maldonado "
+}, {
+    id: 67,
+    categoria: "TECNOLOGIA",
+    comercio: "TECNOCENTER S Y F",
+    telefono: 3112320590,
+    direccion: "Calle 17 #6 07 Centro",
+    propietario: "Martha Yaneth Vacca Rojas"
+}, {
+    id: 68,
+    categoria: "TIENDA DE ROPA",
+    comercio: "Veintidós ",
+    telefono: 3143354715,
+    direccion: "Tienda virtual ",
+    propietario: "Nelson julian Ramirez Calderon "
+}, {
+    id: 69,
+    categoria: "COMIDAS",
+    comercio: "LA CAMASA TRADICIÓN LLANERA",
+    telefono: 3208914563,
+    direccion: "Carrera 1 N 18-43 barrio La floresta",
+    propietario: "Diana Garzón Ramos"
+}, {
+    id: 70,
+    categoria: "SERVICIOS",
+    comercio: "Maniangels ",
+    telefono: 3232507714,
+    direccion: "Calle 1B Sur N10C20",
+    propietario: "Ángela Daza"
+}, {
+    id: 71,
+    categoria: "COMIDAS RAPIDAS",
+    comercio: "Beer La Martina Restaurant Monterrey",
+    telefono: 3208357739,
+    direccion: "Calle 18 # 7- 52",
+    propietario: "Edna Mora Vega "
+}, {
+    id: 72,
+    categoria: "SALUD",
+    comercio: "SALUD LABORAL MONTERREY E.U",
+    telefono: 3112038078,
+    direccion: "CALLE 18 N 13-32",
+    propietario: "Luz Denyr Barreto Roa"
+}, {
+    id: 73,
+    categoria: "BELLEZA",
+    comercio: "Orgánic Nails Monterrey ",
+    telefono: 3195873788,
+    direccion: "Carrera 8 #18-16",
+    propietario: "Carmen Alvarez"
+}, {
+    id: 74,
+    categoria: "HOTELES",
+    comercio: "Ana Gris Cottage",
+    telefono: 3103132246,
+    direccion: "barrio Portal de la roca.",
+    propietario: "Erika Barajas Rivera"
+}, {
+    id: 75,
+    categoria: "SERVICIOS",
+    comercio: "FELIPE PIÑEROS PRODUCCIONES",
+    telefono: 3504728518,
+    direccion: "CALLE 23A # 13 - 25 ",
+    propietario: "Andrés Felipe Piñeros Salamanca"
+}, {
+    id: 76,
+    categoria: "BELLEZA",
+    comercio: "Secret shopping",
+    telefono: 3132639352,
+    direccion: "Calle 19 c#11-91",
+    propietario: "Luz Dary Ramírez Parra "
+}, {
+    id: 77,
+    categoria: "TIENDA DE ROPA",
+    comercio: "THOMI STORE",
+    telefono: 3330350000,
+    direccion: "Calle 16#7-50",
+    propietario: "Luz Mery Clavijo Rojas "
+}, {
+    id: 78,
+    categoria: "SERVICIOS",
+    comercio: "Rifas Sarita",
+    telefono: 3102531091,
+    direccion: "Carrera 6 n 9-79",
+    propietario: "Sara lucia alfonso lopez"
+}, {
+    id: 79,
+    categoria: "SERVICIOS",
+    comercio: "Variedades Fueguito ",
+    telefono: 3223735931,
+    direccion: "Carrera 11 N 11 56 ",
+    propietario: "Paola González "
+}, {
+    id: 80,
+    categoria: "COMIDAS",
+    comercio: "Amasijos Monterrey ",
+    telefono: 3102152212,
+    direccion: "Calle 29# 12 04",
+    propietario: "Myriam amezquita "
+}, {
+    id: 81,
+    categoria: "ALMACEN",
+    comercio: "YARKEX NOVEDADES ",
+    telefono: 3114771261,
+    direccion: "carrera 11#15 23",
+    propietario: "Yanira Bohórquez Gama "
+}, {
+    id: 82,
+    categoria: "TECNOLOGIA",
+    comercio: "puntoAMAR ",
+    telefono: 3219686387,
+    direccion: "Calle 16#6-58",
+    propietario: "Juan Sebastian Amar Daza "
+}, {
+    id: 83,
+    categoria: "DEPORTES",
+    comercio: "Academia de baile DRAGONS ",
+    telefono: 3136583207,
+    direccion: "Carrera 7 #17-28",
+    propietario: "Leonardo Bermúdez "
+}, {
+    id: 84,
+    categoria: "CONSTRUCCION",
+    comercio: "Fegamallas",
+    telefono: 3213310786,
+    direccion: "Carrera 11 29A -10",
+    propietario: "Julio Ernesto Arias"
+}, {
+    id: 85,
+    categoria: "ALMACEN",
+    comercio: "Kt Fashion",
+    telefono: 3226714263,
+    direccion: "Carrera 6#17-25",
+    propietario: "Katerinn Poveda "
+}, {
+    id: 86,
+    categoria: "COMIDAS",
+    comercio: "Montecate ",
+    telefono: 3125184248,
+    direccion: "Calle 19 #8-134",
+    propietario: "Osman Rojas "
+}, {
+    id: 87,
+    comercio: "Proyectos turísticos ",
+    telefono: 3166124752,
+    direccion: "Centro Monterrey ",
+    propietario: "Alexander gamba "
+}, {
+    id: 88,
+    categoria: "COMIDAS RAPIDAS",
+    comercio: "Murdock Kitchen",
+    telefono: 3219512721,
+    direccion: "Calle 10 # 14-17",
+    propietario: "Angela Patricia Cruz Moreno"
+}, {
+    id: 89,
+    categoria: "BELLEZA",
+    comercio: "Anitta nails",
+    telefono: 3208338233,
+    direccion: "Carrera 11-20-36",
+    propietario: "Ana milena orozco"
+}, {
+    id: 90,
+    categoria: "VIVERES",
+    comercio: "Frucampo Jireh ",
+    telefono: 3124328248,
+    direccion: "Carrera 13#16-87",
+    propietario: "Derly Catalina vega"
+}, {
+    id: 91,
+    categoria: "ALMACEN",
+    comercio: "Ecolibrí productos orgnánicos ",
+    telefono: 3123271515,
+    direccion: "Calle 18A 11 - 76",
+    propietario: "Erika Gisselle Barajas Ramírez "
+}, {
+    id: 92,
+    categoria: "DEPORTES",
+    comercio: "Gimnasio Solo Para Mujeres",
+    telefono: 3152687996,
+    direccion: "Diagonal 16#2-80 la floresta",
+    propietario: "Diana Buitrago"
+}, {
+    id: 93,
+    categoria: "FERRETERIAS",
+    comercio: "FERREELECTRICOS EL PROVEEDOR",
+    telefono: 3123350117,
+    direccion: "Calle 18 N° 9-26",
+    propietario: "Angela Turmeque"
+}, {
+    id: 94,
+    categoria: "OFICINAS PROFESIONALES",
+    comercio: "TRAMITES Y SERVICIOS LLANERITO",
+    telefono: 3214915758,
+    direccion: "Calle 15 6 73 BARRIO CENTRO",
+    propietario: "Marly Yelithse Moreno Chaparro"
+}, {
+    id: 95,
+    categoria: "ESCOLAR",
+    comercio: "Papelería Nissi",
+    telefono: 3102482769,
+    direccion: "Carrera 11 No 14 - 05",
+    propietario: "Yiseth Alejandra Ballesteros Mora"
+}, {
+    id: 96,
+    categoria: "ESCOLAR",
+    comercio: "Papeleria la 18",
+    telefono: 3138575009,
+    direccion: "Calle 18 #9-99",
+    propietario: "Yeimi Alejandra Salcedo Roa "
+}, {
+    id: 97,
+    categoria: "TECNOLOGIA",
+    comercio: "Emicell accesorios y repuestos de telefonía móvil ",
+    telefono: 3133275400,
+    direccion: "Calle 7A # 10A 46 Olimpico ",
+    propietario: "Beidy Yulieth Ramirez Ramos "
+}, {
+    id: 98,
+    categoria: "TIENDA DE ROPA",
+    comercio: "Anfas Plus ",
+    telefono: 3133189947,
+    direccion: "Carrera 11 #26-02 ",
+    propietario: "Andrés Rincón "
+}, {
+    id: 99,
+    categoria: "TIENDA DE ROPA",
+    comercio: "Boutique La Bonita ",
+    telefono: 3208109461,
+    direccion: "Calle 16#2-63",
+    propietario: "Zury Paola Corredor Hidalgo "
+}, {
+    id: 100,
+    categoria: "COMIDAS RAPIDAS",
+    comercio: "Chrori-rolo",
+    telefono: 3158957040,
+    direccion: "Carrera 11#21a-37",
+    propietario: "Diana ortiz"
+}, {
+    id: 101,
+    categoria: "OFICINAS PROFESIONALES",
+    comercio: "Asovida",
+    telefono: 3125500711,
+    direccion: "Calle 7 # 1-114",
+    propietario: "Andres Coronado"
+}, {
+    id: 102,
+    categoria: "TURISMO",
+    comercio: "Finca La Corona",
+    telefono: 3125500711,
+    propietario: "Luna Coronado"
+}, {
+    id: 103,
+    categoria: "VIVERES",
+    comercio: "Supermercado La Piolina",
+    telefono: 3106881055,
+    propietario: "Patricia Merino"
+}, {
+    id: 104,
+    categoria: "COMIDAS",
+    comercio: "Restaurante La Tasajera de Julian",
+    telefono: 3118096006,
+    propietario: "Martha Castillo"
+}, {
+    id: 105,
+    categoria: "HOTELES",
+    comercio: "Hotel Los Lagos Centro Vacacional",
+    telefono: 3219300020,
+    propietario: "Neyda Ramirez"
+}, {
+    id: 106,
+    categoria: "HOTELES",
+    comercio: "Hotel Montserrat Plaza",
+    telefono: 3204739192,
+    propietario: "Nubia Romero"
+}, {
+    id: 107,
+    categoria: "SALUD",
+    comercio: "Optica Nathaly Martinez",
+    telefono: 3123186756,
+    propietario: "Nathaly Martinez"
+}, {
+    id: 108,
+    categoria: "SALUD",
+    comercio: "Drogueria Mary",
+    telefono: 3202211080,
+    direccion: "Calle 17 N. 06-03",
+    propietario: "Marybel Buitrago"
+}, {
+    id: 109,
+    categoria: "TIENDA DE ROPA",
+    comercio: "Punto Intimo",
+    telefono: 3102653028,
+    propietario: "Wilmer Martinez "
+}, {
+    id: 110,
+    categoria: "CAFETERIA Y PANADERIA",
+    comercio: "Maria Mulata",
+    telefono: 3219512721,
+    propietario: "Diego Cruz"
+}, {
+    id: 111,
+    categoria: "AUTOMOTORES",
+    comercio: "Morichal EDS",
+    telefono: 3133493942,
+    propietario: "Karen Daza"
+}, {
+    id: 112,
+    categoria: "EVENTOS",
+    comercio: "RYC Eventos",
+    telefono: 3107641506,
+    propietario: "Yaris Galan"
+}, {
+    id: 113,
+    categoria: "ALMACEN",
+    comercio: "Panda Store",
+    telefono: 3106829254,
+    direccion: "Carrera 12 # 10 - 53 - Nuevo horizonte",
+    propietario: "Juan David Palomino"
+}, {
+    id: 114,
+    categoria: "BELLEZA, TIENDA DE BELLEZA",
+    comercio: "Distribuidora casa de reinas",
+    telefono: 3146902953,
+    propietario: "Daniela Mateus"
+}, {
+    id: 115,
+    categoria: "COMIDAS",
+    comercio: "Señor Patacón",
+    telefono: 3222571243,
+    propietario: "Fredy Gomez"
+}, {
+    id: 116,
+    categoria: "DETALLES",
+    comercio: "Mi Hora Loca",
+    telefono: 3108707338,
+    propietario: "Kelly Echavarria"
+}, {
+    id: 117,
+    categoria: "AGRO Y VETERINARIAS",
+    comercio: "Agropecuaria El Profe",
+    telefono: 3143059684,
+    propietario: "Fabián Hernán Camero Medina"
+}, {
+    id: 118,
+    categoria: "AGRO Y VETERINARIAS",
+    comercio: "El establo",
+    telefono: 3103499004,
+    propietario: "Jairo Mora Ramos"
+}, {
+    id: 119,
+    categoria: "ESCOLAR",
+    comercio: "Papeleria del Olimpico",
+    telefono: 3197472004,
+    propietario: "Nancy Quijano"
+}, {
+    id: 120,
+    categoria: "TIENDA DE ROPA",
+    comercio: "Anamá",
+    telefono: 3206442844,
+    propietario: "Angie Natalia Mambuscay Ortega"
+}, {
+    id: 121,
+    categoria: "FERRETERIAS",
+    comercio: "Ferreteria La Roca",
+    telefono: 3222002649,
+    propietario: "Yeimy Buitrago"
+}, {
+    id: 122,
+    categoria: "BARES Y ESTADEROS",
+    comercio: "La Manga Club",
+    telefono: 3132058546,
+    propietario: "William Jimenez"
+}, {
+    id: 123,
+    categoria: "TURISMO",
+    comercio: "Merengon Kerendon",
+    telefono: 3214685921,
+    propietario: "Sandra Tellez"
+}, {
+    id: 124,
+    categoria: "SALUD",
+    comercio: "Drogueria Loren",
+    telefono: 3203021515,
+    propietario: "Lorena Peña"
+}, {
+    id: 125,
+    categoria: "SALUD",
+    comercio: "Humanity",
+    telefono: 3128951948,
+    propietario: "Diana Yasmin Perez"
+}, {
+    id: 126,
+    categoria: "COMIDAS RAPIDAS",
+    comercio: "Restaurante y comidas rápidas Arepa y Tizon ",
+    telefono: 3163409817,
+    propietario: "Betty Romero"
+}, {
+    id: 127,
+    categoria: "COMIDAS RAPIDAS",
+    comercio: "La Chulada Fast Food",
+    telefono: 3102940909,
+    propietario: "Viviana Noa"
+}, {
+    id: 128,
+    categoria: "VIVERES",
+    comercio: "MiniMarket Chente",
+    telefono: 3133137395,
+    propietario: "Wilmar Bejarano "
+}, {
+    id: 129,
+    categoria: "TIENDA DE ROPA",
+    comercio: "Chicuelos Baby Tienda",
+    telefono: 3105837133,
+    propietario: "Silvia Rosa Rivera Cantor"
+}, {
+    id: 130,
+    categoria: "DEPORTES",
+    comercio: "blue gym",
+    telefono: 3133296281,
+    propietario: "Lizete Córdoba pulido"
+}, {
+    id: 131,
+    categoria: "RESTAURANTES",
+    comercio: "Cristina Gourmet",
+    telefono: 3133869149,
+    propietario: "Maria Cristina Cubides mora"
+}, {
+    id: 132,
+    categoria: "DETALLES",
+    comercio: "cositas lindas",
+    telefono: 3133651621,
+    propietario: "Alejandra Ontibón"
+}, {
+    id: 133,
+    categoria: "TECNOLOGIA",
+    comercio: "Fonet comunicaciones",
+    telefono: 3132497587,
+    propietario: "Jose Gomez"
+}, {
+    id: 134,
+    categoria: "ENTRETENIMIENTO",
+    comercio: "Game center",
+    telefono: 3112175389,
+    propietario: "Orley Gaitan "
+}, {
+    id: 135,
+    categoria: "FERRETERIAS",
+    comercio: "Ferretodo",
+    telefono: 3115724579,
+    propietario: "Jorge Garcia"
+}, {
+    id: 136,
+    categoria: "TIENDA DE ROPA",
+    comercio: "Ruta 65 MTY",
+    telefono: 3158133956,
+    direccion: "Carrera 6 # 16-68",
+    propietario: "Yudi Alfonso"
+}, {
+    id: 137,
+    categoria: "TECNOLOGIA",
+    comercio: "Goris tc",
+    telefono: 3112100903,
+    propietario: "Leidy Perilla"
+}, {
+    id: 138,
+    categoria: "TURISMO",
+    comercio: "Pegate al viaje",
+    telefono: 3115658716,
+    propietario: "Fabian Sanchez"
+}, {
+    id: 139,
+    categoria: "AGRO Y VETERINARIAS",
+    comercio: "Vivero Las Palmas",
+    telefono: 3112526508,
+    propietario: "Ronald Beltrán"
+}, {
+    id: 140,
+    categoria: "CONSTRUCCION",
+    comercio: "ABSA FERREELECTRICOS",
+    telefono: 3227597196,
+    propietario: "Miriam Castelblanco"
+}, {
+    id: 141,
+    categoria: "VIVERES",
+    comercio: "EL CAMPO MI PLACITA",
+    telefono: 3138507126,
+    propietario: "Edwin Niño"
+}, {
+    id: 142,
+    categoria: "ESCOLAR",
+    comercio: "Papeleria Superior.com",
+    telefono: 3163505629,
+    propietario: "Angie Martinez Gomez"
+}, {
+    id: 143,
+    categoria: "VIVERES",
+    comercio: "Surticarnes el Guayabal ",
+    telefono: 3132157214,
+    propietario: "Yadira Vaca"
+}, {
+    id: 144,
+    categoria: "OFICINAS PROFESIONALES",
+    comercio: "YC soluciones integrales",
+    telefono: 3106717610,
+    propietario: "Yenni Paola Carrillo Baquero"
+}, {
+    id: 145,
+    categoria: "TRANSPORTE",
+    comercio: "Transervinel SAS",
+    telefono: 3148677552
+}, {
+    id: 146,
+    categoria: "FERRETERIAS",
+    comercio: "suministros construya ferretería",
+    telefono: 3133074935,
+    direccion: "carrera 10 # 17-76",
+    propietario: "Rosalba Camargo Aguilar"
+}, {
+    id: 147,
+    categoria: "TIENDA DE BELLEZA",
+    comercio: "Primavera Beauty",
+    telefono: 3212177866,
+    direccion: "carrera 11 # 18-24",
+    propietario: "Diana Alejandra Hoyos Camargo"
+}, {
+    id: 148,
+    categoria: "DEPORTES",
+    comercio: "Club Barlovento",
+    telefono: 3167489153,
+    direccion: "Carrera 4 # 1- 185 via alterna Tauramena",
+    propietario: " "
+}, {
+    id: 149,
+    categoria: "RESTAURANTES",
+    comercio: "Julia de mi amor Restaurante",
+    telefono: 3209225173
+}, {
+    id: 150,
+    categoria: "TIENDA DE BELLEZA",
+    comercio: "Bella y Bonita",
+    telefono: 3203575764
+}, {
+    id: 151,
+    categoria: "BARES Y ESTADEROS",
+    comercio: "Paradise coffe-cocktail-bar",
+    telefono: 3222823072,
+    direccion: "Carrera 11 # 15-65",
+    propietario: "Esmeralda Gutierrez"
+}, {
+    id: 152,
+    categoria: "TIENDA DE BELLEZA",
+    comercio: "perfumeria my dulce aroma",
+    telefono: 3215592491,
+    propietario: "Diana Esperanza Naranjo"
+}, {
+    id: 153,
+    categoria: "TECNOLOGIA",
+    comercio: "COMPUCEL PUBLIPOVEDA",
+    telefono: 3202524522,
+    propietario: "Luis Edgar Poveda"
+}, {
+    id: 154,
+    categoria: "VIVERES",
+    comercio: "Paguemenos Autoservicio ",
+    telefono: 3112192472,
+    propietario: "Sonia Patricia Ballesteros"
+}, {
+    id: 155,
+    categoria: "TIENDA DE ROPA",
+    comercio: "Caseta la negra & sport el Pibe ",
+    telefono: 3234844008
+}, {
+    id: 156,
+    categoria: "HOTELES",
+    comercio: "Hotel Altos Del Porvenir",
+    telefono: 3122977744
+}, {
+    id: 157,
+    categoria: "ALMACEN",
+    comercio: "Talabarteria Monterrey",
+    telefono: 3133377208,
+    direccion: "Calle 17 # 8-55",
+    propietario: "Luis Alberto Castelblanco,Marina Casteblanco"
+}, {
+    id: 158,
+    categoria: "COMIDAS RAPIDAS",
+    comercio: "Mirador Panorama SAS ",
+    telefono: 3202336531
+}, {
+    id: 159,
+    categoria: "AUTOMOTORES",
+    comercio: "Almacén y taller regiomontuno",
+    telefono: "310 2352440"
+}, {
+    id: 160,
+    categoria: "SALON DE BELLEZA",
+    comercio: "Arte y estilos",
+    telefono: 3112813710
+}, {
+    id: 161,
+    categoria: "COMIDAS RAPIDAS",
+    comercio: "LOVE POPCORN ",
+    telefono: 3124779702
+}, {
+    id: 162,
+    categoria: "HOTELES",
+    comercio: "Terraza Hotel",
+    telefono: 3132623176
+}, {
+    id: 163,
+    categoria: "FERRETERIAS",
+    comercio: "Ferretería ferreexito",
+    telefono: 3138754242
+}, {
+    id: 164,
+    categoria: "SERVICIOS",
+    comercio: "Bienestar en Casa",
+    telefono: 3112342358
+}, {
+    id: 165,
+    categoria: "VIVERES",
+    comercio: "MiniMarket Ruta 65",
+    telefono: 3106074389
+}, {
+    id: 166,
+    categoria: "SALUD",
+    comercio: "Armonia Soluciones Estetícas e Integrales de Monterrey",
+    telefono: 3209006837
+}, {
+    id: 167,
+    categoria: "TECNOLOGIA",
+    comercio: "VHNGROUP Integramos Seguridad y Tecnologia",
+    telefono: 3203231397
+}, {
+    id: 168,
+    categoria: "CONSTRUCCION",
+    comercio: "Vidrios y aluminio  la ELEGANCIA",
+    telefono: "311 8785299"
+}, {
+    id: 169,
+    categoria: "FERRETERIAS",
+    comercio: "Ferrollanos"
+}, {
+    id: 170,
+    categoria: "COMIDAS",
+    comercio: "FABRICA Y  LECHONERIA El CERDITO FIEL",
+    telefono: 3125059898
+}, {
+    id: 171,
+    categoria: "CONSTRUCCION",
+    comercio: "electrocenter",
+    telefono: 3133975630
+}, {
+    id: 172,
+    categoria: "SALUD",
+    comercio: "Maria Paula Estetica facial y corporal",
+    telefono: 3227109328,
+    propietario: "Maria Paula Ontibón"
+}, {
+    id: 173,
+    categoria: "DETALLES",
+    comercio: "chocofantasy",
+    telefono: 3114604464
+}, {
+    id: 174,
+    categoria: "OFICINAS PROFESIONALES",
+    comercio: "B&A ingenieria",
+    telefono: 3124385821
+}, {
+    id: 175,
+    categoria: "AUTOMOTORES",
+    comercio: "MotoSport",
+    telefono: 3102686619
+}, {
+    id: 176,
+    categoria: "AUTOMOTORES",
+    comercio: "Castimotos",
+    telefono: 3114425232
+}, {
+    id: 177,
+    categoria: "AGRO Y VETERINARIAS",
+    comercio: "Tienda de Cactus",
+    telefono: 3104033891
+}, {
+    id: 178,
+    categoria: "TECNOLOGIA",
+    comercio: "Fama De Jota Sistemas y Telecomunicaciones",
+    telefono: 3203912079
+}, {
+    id: 179,
+    categoria: "RESTAURANTES",
+    comercio: "Monteazul",
+    telefono: 3112656615,
+    direccion: "Vereda Bellavista Km 8 Alto de la virgen"
+}, {
+    id: 180,
+    categoria: "COMIDAS",
+    comercio: "Jugos Flavia",
+    telefono: 3143568015
+}, {
+    id: 181,
+    categoria: "BARES Y ESTADEROS",
+    comercio: "Palo De Agua",
+    telefono: 3138901807
+}, {
+    id: 182,
+    categoria: "DETALLES",
+    comercio: "Piñateria danna",
+    telefono: 3123043703
+}, {
+    id: 183,
+    categoria: "BELLEZA",
+    comercio: "D MARIO",
+    telefono: 3114916189
+}, {
+    id: 184,
+    categoria: "DETALLES",
+    comercio: "RegalArte ",
+    telefono: 3212975845,
+    direccion: "Calle19a #11-73",
+    propietario: "Erika Dayanna García Ramírez "
+}, {
+    id: 185,
+    categoria: "RESTAURANTES",
+    comercio: "Restaurante Cositas Ricas",
+    telefono: 3105503486,
+    direccion: "Calle 17 #7-43",
+    propietario: "Martha Nelly Moreno Reyes"
+}, {
+    id: 186,
+    categoria: "FERRETERIAS",
+    comercio: "Ferreelectricos Sarita",
+    telefono: 3163409817,
+    direccion: "calle 23a N 11 97",
+    propietario: "Ingrid Geraldine Cano Romero"
+}, {
+    id: 187,
+    categoria: "DEPORTES",
+    comercio: "Escuela de fútbol Regios F.C",
+    telefono: 3202589922,
+    direccion: "Cll 14 #13-57",
+    propietario: "Sergio Fabián Frias "
+}, {
+    id: 188,
+    categoria: "ENTRETENIMIENTO",
+    comercio: "Alexis calidad y sonido",
+    telefono: 3125604275,
+    direccion: "Carrera 12# 13 - 60",
+    propietario: "Alexis Martínez Buitrago "
+}, {
+    id: 189,
+    categoria: "AUTOMOTORES",
+    comercio: "SERVILLANOS ",
+    telefono: 3115003676,
+    direccion: "Calle 24 N. 11-75"
+}, {
+    id: 190,
+    categoria: "HOTELES",
+    comercio: "Hotel la glorieta",
+    telefono: 3114457637
+}, {
+    id: 191,
+    categoria: "SALON DE BELLEZA",
+    comercio: "Llaneras Spa",
+    telefono: 3212456830,
+    direccion: "Carrera 14#19a-38c",
+    propietario: "Fernanda Romero"
+}, {
+    id: 192,
+    categoria: "BARES Y ESTADEROS",
+    comercio: "Bar millennium ",
+    telefono: 3212241200,
+    direccion: "Calle 19a 11-03",
+    propietario: "Javier López "
+}, {
+    id: 193,
+    categoria: "DETALLES",
+    comercio: "Encanto de amor ",
+    telefono: 3118410280,
+    direccion: "Carrera 11#13-57 Alfonso Lopez enseguida de humanity ",
+    propietario: "Beatriz Montenegro "
+}, {
+    id: 194,
+    categoria: "RESTAURANTES",
+    comercio: "Asados y crokanticos ",
+    telefono: 3133496688,
+    direccion: "Calle 16#6-38",
+    propietario: "Gloria Marlen Leguizamon "
+}, {
+    id: 195,
+    categoria: "ALMACEN",
+    comercio: "Descontrol",
+    telefono: 3108677600,
+    direccion: "Calle 17#8-06 centro",
+    propietario: "Milena aguilar"
+}, {
+    id: 196,
+    categoria: "RESTAURANTES",
+    comercio: "Gastrobar Cocinando con Stiven",
+    telefono: 3203910428,
+    direccion: "Calle17 - 4 - 39",
+    propietario: "Doris Ruiz"
+}, {
+    id: 197,
+    categoria: "ALMACEN",
+    comercio: "Surtimuebles D.K.CH ",
+    telefono: 3143931006,
+    direccion: "Calle 18 # 10 - 11",
+    propietario: "Adolfo Campos"
+}, {
+    id: 198,
+    categoria: "DETALLES",
+    comercio: "Lovely Surprise \"Desayunos Sorpresa\"",
+    telefono: 3138024276,
+    direccion: "Virtual",
+    propietario: "Jullieth Karina Martinez Peña"
+}, {
+    id: 199,
+    categoria: "SERVICIOS",
+    comercio: "Genius Academia Bilingüe ",
+    telefono: 3142553299,
+    direccion: "Calle 18 #3-51",
+    propietario: "Bryam Velasco"
+}, {
+    id: 200,
+    categoria: "CAFETERIA Y PANADERIA",
+    comercio: "Opalo's Pastelería-Café ",
+    telefono: 3123959153,
+    direccion: "Carrera 16# 7-04",
+    propietario: "José garcia"
+}, {
+    id: 201,
+    categoria: "VIVERES",
+    comercio: "Supermercado leche miel ",
+    telefono: 3212026989,
+    direccion: "Calle 16-9-65",
+    propietario: "Maria Julia Cardozo "
+}, {
+    id: 202,
+    categoria: "ENTRETENIMIENTO",
+    comercio: "O' MÚSIC \"Sistemas Profesionales de Audio e Iluminación\"",
+    telefono: 3112175389,
+    direccion: "Carrera 11 # 13-53",
+    propietario: "Orley Gaitan "
+}, {
+    id: 203,
+    categoria: "EVENTOS",
+    comercio: "ARTEMANIA",
+    telefono: 3115901936,
+    direccion: "Cra 8 #17-74 barrio centro",
+    propietario: "Amanda Pino"
+}, {
+    id: 204,
+    categoria: "SERVICIOS PROFESIONALES",
+    comercio: "Daza Rodríguez Ingenieros SAS",
+    telefono: 3148677552,
+    direccion: "Km 1 # 16 - 25",
+    propietario: "Nelson Fabian Daza R"
+}, {
+    id: 205,
+    categoria: "MEDIOS DE COMUNICACIÓN",
+    comercio: "PIEDEMONTE RADIO ",
+    telefono: 3112500658,
+    direccion: "Carrera 6 # 20 - 21",
+    propietario: "Fundacion cultural y turística la CEIBA"
+}, {
+    id: 206,
+    categoria: "AUTOMOTORES",
+    comercio: "Lubrifenos",
+    telefono: 3108840534
+}, {
+    id: 207,
+    categoria: "SALUD",
+    comercio: "Natufarma Mary 2",
+    telefono: 3229453081
+}, {
+    id: 208,
+    categoria: "ALMACEN",
+    comercio: "Miscelánea Daniel's ",
+    telefono: 3115094750,
+    direccion: "Calle 18 N 7 62 ",
+    propietario: "Zullney Muñoz "
+}, {
+    id: 209,
+    categoria: "SERVICIOS PROFESIONALES",
+    comercio: "Contadora Publica ",
+    telefono: 3115094750,
+    direccion: "Calle 18 N 7 62",
+    propietario: "Zullney Muñoz "
+}, {
+    id: 210,
+    categoria: "SALUD",
+    comercio: "Fisio Spa centro de vida sana",
+    telefono: 3108517557,
+    propietario: "Robinzon Ramírez "
+}, {
+    id: 211,
+    categoria: "ALMACEN",
+    comercio: "AMOBLAMOS ",
+    telefono: 3203167119,
+    direccion: "Cra 8#16-35 ",
+    propietario: "Ingrid Sorani Ortiz "
+}, {
+    id: 212,
+    categoria: "MEDIOS DE COMUNICACIÓN",
+    comercio: "Entérese",
+    telefono: 3112220662,
+    propietario: "Holman Toloza"
+}, {
+    id: 213,
+    categoria: "SERVICIOS",
+    comercio: "Centro de apoyo pedagógico kinder garden personitas",
+    telefono: 3118128977,
+    direccion: "Calle 16 #7-62",
+    propietario: "Milena García "
+}, {
+    id: 214,
+    categoria: "EVENTOS",
+    comercio: "Milena García Eventos",
+    telefono: 3118128977,
+    direccion: "Calle 16-#7-62",
+    propietario: "Milena García "
+}, {
+    id: 215,
+    categoria: "COMIDAS RAPIDAS",
+    comercio: "Uno A ",
+    telefono: 3173829790
+}, {
+    id: 216,
+    categoria: "SALUD",
+    comercio: "Drogueria YEDT",
+    telefono: 3103089900
+}, {
+    id: 217,
+    categoria: "SALON DE BELLEZA",
+    comercio: "Jenny Vargas Spa ",
+    telefono: 3154646550,
+    direccion: "Carrera 7 # 17-22"
+}, {
+    id: 218,
+    categoria: "TIENDA DE ROPA",
+    comercio: "Calzado Colombia"
+}, {
+    id: 219,
+    categoria: "ESCOLAR",
+    comercio: "Papeleria Papirus",
+    telefono: 3209233457,
+    direccion: "Carrera 6#16-51"
+}, {
+    id: 220,
+    categoria: "SALUD",
+    comercio: "FARMARECOR",
+    telefono: 3123801144
+}, {
+    id: 221,
+    categoria: "SALUD",
+    comercio: "Nuestra IPS SAS",
+    telefono: 3132014695,
+    direccion: "Carrera 11 # 13-81"
+}, {
+    id: 222,
+    categoria: "VIVERES",
+    comercio: "PULPAS DON LIMON",
+    telefono: 3208369868,
+    direccion: "Punto de fabrica vereda Bellavista Alta, Finca Villa Flor",
+    propietario: "Oscar Montaño"
+}, {
+    id: 223,
+    categoria: "TECNOLOGIA",
+    comercio: "DADI soluciones digitales",
+    telefono: 3108854737,
+    direccion: "Cra 11 # 18 - 82",
+    propietario: "Michael Daniel Forero Roldan"
+}, {
+    id: 224,
+    categoria: "TECNOLOGIA",
+    comercio: "DRG",
+    telefono: 3112320590,
+    direccion: "Calle 17 6 07 interior 2 CENTRO",
+    propietario: "Dario Roberto Gutierrez"
+}, {
+    id: 225,
+    categoria: "ALMACEN",
+    comercio: "TORNADO 🌪️",
+    telefono: 3102891613,
+    direccion: "Carrera 7 #17-67",
+    propietario: "Jorge Tangarife"
+}, {
+    id: 226,
+    categoria: "AGRO Y VETERINARIAS",
+    comercio: "Vivero Agroforestal Bella Flor",
+    telefono: 3188999849,
+    direccion: "Barrio la estrella ",
+    propietario: "Luisa Cedeño Mora "
+}, {
+    id: 227,
+    categoria: "AGRO Y VETERINARIAS",
+    comercio: "Finca agroturisticas la Bombonera",
+    telefono: 3202520272,
+    direccion: "Vereda Betel Finca la Bombonera",
+    propietario: "Luz Marina Díaz Parra "
+}, {
+    id: 228,
+    categoria: "ALMACEN",
+    comercio: "Compraventa america",
+    telefono: 3209465766,
+    direccion: "Calle 18 No 9 118",
+    propietario: "Yeferson Soto Muñoz"
+}, {
+    id: 229,
+    categoria: "COMIDAS",
+    comercio: "LECHONERIA \"LOS VÁSQUEZ\" ",
+    telefono: 3115923373,
+    direccion: "Carrera 11 #21A-04",
+    propietario: "Nubia Clara Prieto Villarraga"
+}, {
+    id: 230,
+    categoria: "AGRO Y VETERINARIAS",
+    comercio: "Granja Agroecológica Jeska ",
+    telefono: 3124501264,
+    direccion: "Km 6 via alterna Monterrey a Tauramena, vereda Buenavista ",
+    propietario: "Claudia Lizeth Ramirez "
+}, {
+    id: 231,
+    categoria: "VIVERES",
+    comercio: "SUPERMERCADO EL COLIBRÍ ",
+    telefono: 3114820914,
+    direccion: "Carrera 13 #13a-20",
+    propietario: "Ubaldina Rodríguez "
+}, {
+    id: 232,
+    categoria: "HOTELES",
+    comercio: "HOTEL POSADA CAMPESTRE SAN JUAN",
+    telefono: 3232093595,
+    direccion: "Calle 19 8-26 ",
+    propietario: "Juan Pablo Alvarez Pinzon"
+}, {
+    id: 233,
+    categoria: "ENTRETENIMIENTO",
+    comercio: "LA GRADA VIP SAS",
+    telefono: 3134615738,
+    direccion: "Carrera 11 #  22 A 15",
+    propietario: "Jose David Silva Copete"
+}, {
+    id: 234,
+    categoria: "TURISMO",
+    comercio: "Monterrey Casanare Paraíso Ensoñador ",
+    telefono: 3132239002,
+    direccion: "Monterrey Centro ",
+    propietario: "Carmen Pinto "
+}, {
+    id: 235,
+    categoria: "BELLEZA-TIENDAS DE BELLEZA",
+    comercio: "Diosa Vanidosa",
+    telefono: 3125231458,
+    direccion: "Carrera 11 14 79",
+    propietario: "María Aurora Turmeque Parra"
+}, {
+    id: 236,
+    categoria: "BARBERIA",
+    comercio: "Newstyle Barber Shop",
+    telefono: 3203167113,
+    propietario: "Maikel Malaver"
+}]
 
-]
 
-export const banners = [banner, banner1, banner3]
+export const banners = [banner0, banner1, banner2, banner3]
 
 export const cursomarketing = [
     marketing,
@@ -571,4 +1643,63 @@ export const cursomarketing = [
     marketing9,
     marketing10,
     marketing11
+]
+
+export const botones = [
+    {
+        img: almacenes,
+        alt: "ALMACEN"
+    },
+    {
+        img: comidasrapidas,
+        alt: "COMIDAS RAPIDAS"
+    },
+    {
+        img: construccion,
+        alt: "FERRETERIAS"
+    },
+    {
+        img: deporte,
+        alt: "DEPORTES"
+    },
+    {
+        img: detalles,
+        alt: "DETALLES"
+    },
+    {
+        img: discotecas,
+        alt: "BARES Y ESTADEROS"
+    },
+    {
+        img: emergencias,
+        alt: "EMERGENCIAS"
+    },
+    {
+        img: guiasTuristicos,
+        alt: "TURISMO"
+    },
+    {
+        img: hoteles,
+        alt: "HOTELES"
+    },
+    {
+        img: moda,
+        alt: "TIENDA DE ROPA"
+    },
+    {
+        img: restaurantes,
+        alt: "COMIDA"
+    },
+    {
+        img: serviciosvarios,
+        alt: "BELLEZA"
+    },
+    {
+        img: tecnologia,
+        alt: "TECNOLOGIA"
+    },
+    {
+        img: viveres,
+        alt: "VIVERES"
+    },
 ]

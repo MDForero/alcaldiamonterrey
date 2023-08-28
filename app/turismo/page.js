@@ -1,15 +1,34 @@
 import React from 'react'
-import logo from "../../images/corazon.png"
 import Image from 'next/image'
+import banner0 from '../../images/actualización/Banner A.jpg'
+import banner1 from '../../images/actualización/Banner B.jpg'
+import banner2 from '../../images/actualización/Banner D.jpg'
 
+const banners = [
+  {
+    img: banner0,
+    alt: ""
+  },
+  {
+    img: banner1,
+    alt: ""
+  },
+  {
+    img: banner2,
+    alt: ""
+  }]
+
+export const metadata = {
+  title: 'Monterrey | Turismo',
+  description: 'En esta sección encontrarás información sobre los sitios turísticos que se encuentran en el municipio de Monterrey, Casanare.',
+  keywords: ["Turismo en Monterrey", "Río Túa en Monterrey", "Caño la Roca en Monterrey", "Puente Tabla en Monterrey", "Piedra del Sol en Monterrey", "Pozo del Amor en Monterrey"]
+}
 
 const Turismo = () => {
   return (
     <div>
-      <main className='preview' id="turismo">
-        <div className='overlay'>
-          <Image src={logo} />
-        </div>
+      <main className='flex flex-wrapnpm' id="turismo">
+        {banners.map(({ img, alt }) => (<Image className="d-block md:w-2/6 h-60vh" src={img} alt={alt} />))}
       </main>
       <section>
 
@@ -30,7 +49,7 @@ const Turismo = () => {
             </div>
           </div>
         </article>
-        
+
         <article className='turismo' id="puente">
           <div className='overlay-turismo'>
             <div>

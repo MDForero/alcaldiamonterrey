@@ -1,44 +1,41 @@
 "use client"
 import React from 'react'
-import logo from "../images/corazon.png"
-import restaurant from "../images/restuarante.png"
-import drogueria from "../images/drogueria.png"
-import hotel from "../images/hotel.png"
-import autoservicio from "../images/autoservicio.jpg"
-import ferreteria from "../images/ferreteria.jpg"
-import ropa from "../images/almacenesropa .jpg"
-import infografia from "../images/infografia.jpg"
-import { Carousel, CarouselItem } from 'react-bootstrap'
-import { banners } from '../images/data'
-import infografia2 from '../images/infografia2.jpg'
-import paso1 from "../images/paso1.jpg"
-import paso2 from "../images/paso2.jpg"
-import paso3 from "../images/paso3.jpg"
-import paso31 from "../images/paso31.jpg"
+import infografia from "../images/actualización/CCC Oficina Monterrey.jpg"
+import { Carousel } from 'react-bootstrap'
+import { banners, botones } from '../images/data'
+import ifcc from '../images/actualización/IFC Banner.jpg'
 import Link from 'next/link'
 import Image from 'next/image'
+import ButtonCategory from '../components/ButtonCategory'
 
 
 
-const [banner, banner1, banner3] = banners
+const [banner0, banner1, banner3, banner4] = banners
 const slider = [
   {
     id: 1,
-    img: banner,
+    img: banner0,
     href: 'registro',
-    alt: 'registrate'
+    alt: 'Guía comercial Monterrey Casanare'
   },
   {
     id: 2,
     img: banner1,
-    href: 'marketing',
-    alt: 'Curso de marketing digital'
+    href: 'empresas',
+    alt: 'Comercios inscritos en la guía comercial Monterrey Casanare'
   },
   {
     id: 3,
     img: banner3,
     alt: 'Alcaldía de Monterrey - Casanare'
+  },
+  {
+    id: 3,
+    img: banner4,
+    alt: 'Punto de información turística Monterrey - Casanare',
+    href: 'https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d248.45809215263122!2d-72.89296004671425!3d4.8843804151883665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1689691272759!5m2!1ses-419!2sco'
   }
+
 ]
 
 const page = () => {
@@ -54,54 +51,40 @@ const page = () => {
             </Carousel.Item>))}
         </Carousel>
       </main>
-      <section className='container grid-store'>
-        <div className='g-title'><h1>Categorias destacadas</h1></div>
-        <Link className='categorys g1 figure' id='restaurante' href="empresas" state={"comida"}>
-          <Image src={restaurant} className="img" id="restaurante" />
-          <span className="listing-badges">16 establecimientos</span>
-        </Link>
-        <Link className='categorys g2 figure' id="drogueria" href="empresas" state={"salud y belleza"}>
-          <Image className='img' src={drogueria} />
-          <span className="listing-badges">16 establecimientos</span>
-        </Link>
-        <Link className='categorys g3 figure' id="hotel" href="empresas" state={"autoservicio"}>
-          <Image className='img' src={hotel} />
-          <span className="listing-badges">16 establecimientos</span>
+      <section className='md:max-w-screen-2xl w-[100%] mx-auto py-8'>
+        <div className='md:max-w-screen-xl w-[95%] shadow mx-auto pb-8 px-2'>
 
-        </Link>
-        <Link className='categorys g4 figure' id="ferreteria" href="empresas" state={"entretenimiento"}>
-          <Image className='img' src={ferreteria} />
-          <span className="listing-badges">16 establecimientos</span>
-        </Link>
-        <Link className='categorys g5 figure' id="ropa" href="empresas">
-          <Image className='img' src={ropa} />
-          <span className="listing-badges">16 establecimientos</span>
-        </Link>
+          <h1 className='text-center text-3xl font-semibold py-8 '>¡Bienvenidos a la guía comercial digital del comercio de Monterrey!</h1>
+          <div className='max-w-screen-lg mx-auto text-justify text-xl'>
+            <p>Esta innovadora estrategia ha sido implementada por la administración municipal "De Corazón por Monterrey" con el valioso apoyo de la red de comerciantes regiomontunos.</p>
+            <p>En esta completa guía encontrarán información organizada por categorías sobre una amplia variedad de prestadores de bienes y servicios en el municipio, incluyendo sus datos de contacto y detalles relevantes. Tanto si eres turista como residente, esta guía será de gran utilidad. En nuestra sección de turismo, podrás disfrutar de artículos y una galería fotográfica que destaca las maravillas turísticas de Monterrey, así como los bellos espacios y experiencias que ofrece. Además, no te pierdas ninguno de nuestros emocionantes eventos públicos y privados, consulta nuestra cartelera y únete a la diversión.</p>
+            <p>Si eres comerciante y deseas promocionar tu negocio en esta plataforma, no dudes en hacerlo, ¡es completamente gratuito! Esta iniciativa ha sido concebida por la administración municipal, a través de la Secretaría de Desarrollo Económico y Medio Ambiente, con el objetivo de facilitar la promoción y visibilidad de los productos, comercios, empresas y servicios locales para impulsar una economía más sólida y responsable.</p>
+            <p>¡Únete a esta emocionante guía comercial digital y se parte del crecimiento económico de Monterrey! Juntos, construimos un futuro próspero para nuestro municipio.</p>
+          </div>
+        </div>
+      </section>
+      <section className='max-w-screen-xl mx-auto py-8'>
+        <div className='flex -space-x-1 mx-auto justify-center'>
+          {botones.map((item, index) => (<ButtonCategory key={index} item={item} />))}
+        </div>
+
       </section>
       <section className="container margin">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63606.97436451042!2d-72.9239018473618!3d4.866398168616339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ad27e37ebea73%3A0x12a98d7eb504b504!2sMonterrey%2C%20Casanare!5e0!3m2!1ses-419!2sco!4v1670015704176!5m2!1ses-419!2sco" width="100%" height="450px" style={{ margin: "50px 0px " }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+        <iframe title='Ubicación de Monterrey' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63606.97436451042!2d-72.9239018473618!3d4.866398168616339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ad27e37ebea73%3A0x12a98d7eb504b504!2sMonterrey%2C%20Casanare!5e0!3m2!1ses-419!2sco!4v1670015704176!5m2!1ses-419!2sco" width="100%" height="450px" style={{ margin: "50px 0px " }} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
       </section>
       <h3 className='hidden title'>Ruta de formalización empresarial</h3>
       <section className="container margin">
-        <figure style={{ overflow: "hidden" }}>
-          <Image src={infografia} alt="infografia" width="100%" className='infografia' />
-          <figcaption style={{ textAlign: "center" }}><a href="https://cccasanare.co/">Cámara de comercio</a></figcaption>
-        </figure>
-      </section>
-      <section className="container margin">
-        <h2 className="title"> Inscripción en el fondo emprender </h2>
-        <figure style={{ overflow: "hidden" }}>
-          <Image src={infografia2} alt="infografia" width="100%" className='infografia' />
-          <figcaption style={{ textAlign: "center" }}><a href="https://www.fondoemprender.com/"> Fondo emprender</a></figcaption>
-        </figure>
+        <a href="https://wa.me/+573108056988">
+          <figure style={{ overflow: "hidden" }}>
+            <Image src={infografia} alt="infografia" className='w-full lg:max-w-4xl lg:mx-auto object-contain' />
+
+          </figure>
+        </a>
       </section>
       <section className='margin'>
-        <h2 className="title">Prestamos en el IFC</h2>
-        <div className='infografias'>
-          <Image src={paso1} alt="" width="100%" />
-          <Image src={paso2} alt="" width="100%" />
-          <Image src={paso31} alt="" width="100%" />
-        </div>
+        <a href='#' className='infografias'>
+          <Image src={ifcc} alt="" width="100%" />
+        </a>
       </section>
     </div>
   )

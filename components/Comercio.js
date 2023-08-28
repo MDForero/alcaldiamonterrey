@@ -1,21 +1,42 @@
 import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { faMapLocationDot, faPhone, faPhoneSquare } from '@fortawesome/free-solid-svg-icons';
+import { faMapLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react'
-import { Button, Card, Carousel, CarouselItem, Modal } from 'react-bootstrap';
+import { Card, Carousel,  Modal } from 'react-bootstrap';
 import pendiente from "../images/pendiente.jpg"
 import Image from 'next/image';
 
 const Comercio = ({ data }) => {
-    const { img, direccion, descripcion, negocio, celular, redes, ubicacion } = data
-    let whatsapp = `https://wa.me/+57${celular}`
+    const { id, categoria, comercio, telefono, direccion, propietario} = data
+    let whatsapp = `https://wa.me/+57${telefono}`
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     
-    return (
-        <div>
 
+    // id: 1,
+    // categoria: "TIENDA DE ROPA",
+    // comercio: "MELA BOUTIQUE",
+    // telefono: 3125301867,
+    // direccion: "Calle 17#5-57 centro",
+    // propietario: "Jenniffer Paola Campos"
+    return (
+        <tr className='text-justify text-lg font-semibold odd:bg-gray-100'>
+            <td>{comercio}</td>
+            <td>{telefono}</td>
+            <td>{direccion}</td>
+            <td>{propietario}</td>
+            <td className='flex gap-2 text-4xl flex-row-reverse'>
+                <a href={`tel:${telefono}`}><FontAwesomeIcon icon={faPhone}/></a>
+                <a href={`http://wa.me/+57${telefono}`}><FontAwesomeIcon icon={faWhatsapp}/></a>
+            </td>
+
+        </tr>
+    )
+}
+
+export default Comercio
+{/* 
             <Card variant="primary" onClick={handleShow} className="card-negocios">
                 <Card.Header style={{height:"70px", display:"flex", justifyContent:"center", alignItems:"center", textTransform:"capitalize"}}>
                     <h5 >{negocio}</h5>
@@ -23,7 +44,7 @@ const Comercio = ({ data }) => {
                 <figure style={{ overflow: "hidden", borderRadius: "10px", height: "300px" }}>
                     {img ?
                         <Image src={img[0]} alt={negocio} style={{ position: "relative", height: "400px" }} className="img" />
-                        : <Image src={pendiente} alt={negocio} style={{ position: "relative" }} className="img" />
+                        : <Image src={pendiente} alt="pendiente" style={{ position: "relative" }} className="img" />
 
                     }
                 </figure>
@@ -41,7 +62,6 @@ const Comercio = ({ data }) => {
                                 <Image
                                     className="d-block"
                                     src={element}
-                                    
                                     width="100%"
                                     alt=""
                                     style={{ objectFit: "cover", scale:""}}
@@ -90,9 +110,4 @@ const Comercio = ({ data }) => {
                     </section>
                 </Modal.Body>
 
-            </Modal>
-        </div>
-    )
-}
-
-export default Comercio
+            </Modal> */}
